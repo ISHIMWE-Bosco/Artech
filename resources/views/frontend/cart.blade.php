@@ -29,7 +29,7 @@
                 @php $total += $details['price'] * $details['quantity'] @endphp
                 <div class="cart-wizard-area">
                     <div class="image">
-                        <img src="{{asset('public/uploads/courses/' . $details['image'])}}" alt="course image" />
+                        <img src="{{asset('/uploads/courses/' . $details['image'])}}" alt="course image" />
                     </div>
                     <div class="text">
                         <h6><a href="{{route('courseDetails', encryptor('encrypt', $id))}}">{{$details['title_en']}}</a>
@@ -37,8 +37,8 @@
                         <p>By <a href="#">{{$details['instructor']}}</a></p>
                         <div class="bottom-wizard d-flex justify-content-between align-items-center">
                             <p>
-                                {{$details['price'] ? '৳' . $details['price'] : 'Free'}}
-                                <span><del>{{$details['old_price'] ? '৳' . $details['old_price'] : ''}}</del></span>
+                                {{$details['price'] ? 'RWF' . $details['price'] : 'Free'}}
+                                <span><del>{{$details['old_price'] ? 'RWF' . $details['old_price'] : ''}}</del></span>
                             </p>
                             <div class="trash-icon">
                                 <a href="#" class="remove-from-cart" data-id="{{$id}}">
@@ -56,19 +56,19 @@
                 <div class="summery-wizard">
                     <div class="summery-wizard-text pt-0">
                         <h6>Subtotal</h6>
-                        <p> {{'৳' . number_format((float) session('cart_details')['cart_total'] , 2)}}</p>
+                        <p> {{'RWF' . number_format((float) session('cart_details')['cart_total'] , 2)}}</p>
                     </div>
                     <div class="summery-wizard-text">
                         <h6>Coupon Discount ({{session('cart_details')['discount'] ?? 0.00}}%)</h6>
-                        <p>{{'৳' . number_format((float) isset(session('cart_details')['discount_amount']) ? session('cart_details')['discount_amount']: 0.00 , 2)}}</p>
+                        <p>{{'RWF' . number_format((float) isset(session('cart_details')['discount_amount']) ? session('cart_details')['discount_amount']: 0.00 , 2)}}</p>
                     </div>
                     <div class="summery-wizard-text">
                         <h6>Taxes (15%)</h6>
-                        <p> {{'৳' . number_format((float) session('cart_details')['tax'] , 2)}}</p>
+                        <p> {{'RWF' . number_format((float) session('cart_details')['tax'] , 2)}}</p>
                     </div>
                     <div class="total-wizard">
                         <h6 class="font-title--card">Total:</h6>
-                        <p class="font-title--card">{{'৳' . number_format((float) session('cart_details')['total_amount'] , 2)}}</p>
+                        <p class="font-title--card">{{'RWF' . number_format((float) session('cart_details')['total_amount'] , 2)}}</p>
                     </div>
                     <form action="{{route('coupon_check')}}" method="post">
                         @csrf

@@ -6,14 +6,18 @@
 @section('content')
 
 <!-- Banner Starts Here -->
-<section class="main-banner" style="background-image: url({{asset('public/frontend/dist/images/banner/banner.jpg')}});">
+<section class="main-banner" style="background-image: url({{asset('/frontend/dist/images/banner/banner.png')}}); height:50%">
     <div class="container">
         <div class="row">
-            <div class="col-lg-7 mb-lg-0 order-2 order-lg-0 d-flex align-items-center">
+            <div class="col-lg-6 mb-lg-0 order-2 order-lg-0 d-flex align-items-center">
                 <div class="banner-two-start">
-                    <h1 class="font-title--lg">Unlock Knowledge Anywhere, Anytime with Experts.</h1>
+                    <h1 class="font-title-lg">Unlock Knowledge Anywhere, Anytime with Experts.</h1>
                     <p>
-                       Our commitment is to guide you to the finest online courses, offering expert insights whenever and wherever you are.
+                        Discover a new way to learn with LMS, your destination for quality education and growth. At LMS, we make education accessible, engaging, and effective for everyone.
+
+                        Learn from industry leaders, study at your own pace, enjoy interactive content and live sessions, and connect with a vibrant learning community. Earn recognized certificates to showcase your achievements.
+                        
+                        Start your journey with LMS today and unlock your potential! 
                     </p>
                     <form>
                         <div class="banner-input">
@@ -33,12 +37,12 @@
                     </form>
                 </div>
             </div>
-            <div class="col-lg-5 order-1 order-lg-0">
+            {{-- <div class="col-lg-5 order-1 order-lg-0">
                 <div class="main-banner-end">
-                    <img src="{{asset('public/frontend/dist/images/banner/banner-image-01.png')}}" alt="image"
+                    <img src="{{asset('/frontend/dist/images/banner/banner.jpg')}}" alt="image"
                         class="img-fluid" width="515" height="700"/>
                 </div>
-            </div>
+            </div> --}}
         </div>
     </div>
 </section>
@@ -57,7 +61,7 @@
                 <div class="browse-categories-item default-item-one mb-2">
                     <div class="browse-categories-item-icon">
                         <div class="categories-one default-categories">
-                            <img src="{{asset('public/uploads/courseCategories/'.$cat->category_image)}}"
+                            <img src="{{asset('/uploads/courseCategories/'.$cat->category_image)}}"
                                 class="rounded-circle" width="80" height="80" alt="">
                         </div>
                     </div>
@@ -77,9 +81,9 @@
         </div>
     </div>
     <div class="browse-categories-shape">
-        <img src="{{asset('public/frontend/dist/images/shape/dots/dots-img-11.png')}}" alt="shape"
+        <img src="{{asset('/frontend/dist/images/shape/dots/dots-img-11.png')}}" alt="shape"
             class="img-fluid shape-01" />
-        <img src="{{asset('public/frontend/dist/images/shape/line01.png')}}" alt="shape" class="img-fluid shape-02" />
+        <img src="{{asset('/frontend/dist/images/shape/line01.png')}}" alt="shape" class="img-fluid shape-02" />
     </div>
 </section>
 
@@ -142,7 +146,7 @@
                         <div class="col-xl-4 col-md-6">
                             <div class="contentCard contentCard--course">
                                 <div class="contentCard-top">
-                                    <a href="#"><img src="{{asset('public/uploads/courses/'.$pc->image)}}" alt="images"
+                                    <a href="#"><img src="{{asset('/uploads/courses/'.$pc->image)}}" alt="images"
                                             class="img-fluid" /></a>
                                 </div>
                                 <div class="contentCard-bottom">
@@ -153,40 +157,40 @@
                                     <div class="contentCard-info d-flex align-items-center justify-content-between">
                                         <a href="{{route('instructorProfile', encryptor('encrypt', $pc->instructor?->id))}}"
                                             class="contentCard-user d-flex align-items-center">
-                                            <img src="{{asset('public/uploads/users/'.$pc?->instructor->image)}}"
+                                            <img src="{{asset('/uploads/users/'.$pc?->instructor->image)}}"
                                                 alt="client-image" class="rounded-circle" height="34" width="34" />
                                             <p class="font-para--md">{{$pc?->instructor->name_en}}</p>
                                         </a>
                                         <div class="price">
-                                            <span>{{$pc->price?'৳'.$pc->price:'Free'}}</span>
-                                            <del>{{$pc->old_price?'৳'.$pc->old_price:''}}</del>
+                                            <span>{{$pc->price?'RWF'.$pc->price:'Free'}}</span>
+                                            <del>{{$pc->old_price?'RWF'.$pc->old_price:''}}</del>
                                         </div>
                                     </div>
                                     <div class="contentCard-more">
                                         <div class="d-flex align-items-center">
                                             <div class="icon">
-                                                <img src="{{asset('public/frontend/dist/images/icon/star.png')}}"
+                                                <img src="{{asset('/frontend/dist/images/icon/star.png')}}"
                                                     alt="star" />
                                             </div>
                                             <span>4.5</span>
                                         </div>
                                         <div class="eye d-flex align-items-center">
                                             <div class="icon">
-                                                <img src="{{asset('public/frontend/dist/images/icon/eye.png')}}"
+                                                <img src="{{asset('/frontend/dist/images/icon/eye.png')}}"
                                                     alt="eye" />
                                             </div>
                                             <span>24,517</span>
                                         </div>
                                         <div class="book d-flex align-items-center">
                                             <div class="icon">
-                                                <img src="{{asset('public/frontend/dist/images/icon/book.png')}}"
+                                                <img src="{{asset('/frontend/dist/images/icon/book.png')}}"
                                                     alt="location" />
                                             </div>
                                             <span>{{$pc->lesson?$pc->lesson:0}} Lesson</span>
                                         </div>
                                         <div class="clock d-flex align-items-center">
                                             <div class="icon">
-                                                <img src="{{asset('public/frontend/dist/images/icon/Clock.png')}}"
+                                                <img src="{{asset('/frontend/dist/images/icon/Clock.png')}}"
                                                     alt="clock" />
                                             </div>
                                             <span>{{$pc->duration?$pc->duration:0}} Hours</span>
@@ -216,7 +220,7 @@
                         <div class="col-xl-4 col-md-6">
                             <div class="contentCard contentCard--course">
                                 <div class="contentCard-top">
-                                    <a href="#"><img src="{{asset('public/uploads/courses/'.$dc->image)}}" alt="images" class="img-fluid" /></a>
+                                    <a href="#"><img src="{{asset('/uploads/courses/'.$dc->image)}}" alt="images" class="img-fluid" /></a>
                                 </div>
                                 <div class="contentCard-bottom">
                                     <h5>
@@ -226,37 +230,37 @@
                                     <div class="contentCard-info d-flex align-items-center justify-content-between">
                                         <a href="{{route('instructorProfile', encryptor('encrypt', $dc->instructor?->id))}}"
                                             class="contentCard-user d-flex align-items-center">
-                                            <img src="{{asset('public/uploads/users/'.$dc?->instructor->image)}}" alt="client-image"
+                                            <img src="{{asset('/uploads/users/'.$dc?->instructor->image)}}" alt="client-image"
                                                 class="rounded-circle" height="34" width="34" />
                                             <p class="font-para--md">{{$dc?->instructor->name_en}}</p>
                                         </a>
                                         <div class="price">
-                                            <span>{{$dc->price?'৳'.$dc->price:'Free'}}</span>
-                                            <del>{{$dc->old_price?'৳'.$dc->old_price:''}}</del>
+                                            <span>{{$dc->price?'RWF'.$dc->price:'Free'}}</span>
+                                            <del>{{$dc->old_price?'RWF'.$dc->old_price:''}}</del>
                                         </div>
                                     </div>
                                     <div class="contentCard-more">
                                         <div class="d-flex align-items-center">
                                             <div class="icon">
-                                                <img src="{{asset('public/frontend/dist/images/icon/star.png')}}" alt="star" />
+                                                <img src="{{asset('/frontend/dist/images/icon/star.png')}}" alt="star" />
                                             </div>
                                             <span>4.5</span>
                                         </div>
                                         <div class="eye d-flex align-items-center">
                                             <div class="icon">
-                                                <img src="{{asset('public/frontend/dist/images/icon/eye.png')}}" alt="eye" />
+                                                <img src="{{asset('/frontend/dist/images/icon/eye.png')}}" alt="eye" />
                                             </div>
                                             <span>24,517</span>
                                         </div>
                                         <div class="book d-flex align-items-center">
                                             <div class="icon">
-                                                <img src="{{asset('public/frontend/dist/images/icon/book.png')}}" alt="location" />
+                                                <img src="{{asset('/frontend/dist/images/icon/book.png')}}" alt="location" />
                                             </div>
                                             <span>{{$dc->lesson?$dc->lesson:0}} Lesson</span>
                                         </div>
                                         <div class="clock d-flex align-items-center">
                                             <div class="icon">
-                                                <img src="{{asset('public/frontend/dist/images/icon/Clock.png')}}" alt="clock" />
+                                                <img src="{{asset('/frontend/dist/images/icon/Clock.png')}}" alt="clock" />
                                             </div>
                                             <span>{{$dc->duration?$dc->duration:0}} Hours</span>
                                         </div>
@@ -285,7 +289,7 @@
                         <div class="col-xl-4 col-md-6">
                             <div class="contentCard contentCard--course">
                                 <div class="contentCard-top">
-                                    <a href="#"><img src="{{asset('public/uploads/courses/'.$dv->image)}}" alt="images"
+                                    <a href="#"><img src="{{asset('/uploads/courses/'.$dv->image)}}" alt="images"
                                             class="img-fluid" /></a>
                                 </div>
                                 <div class="contentCard-bottom">
@@ -296,37 +300,37 @@
                                     <div class="contentCard-info d-flex align-items-center justify-content-between">
                                         <a href="{{route('instructorProfile', encryptor('encrypt', $dv->instructor?->id))}}"
                                             class="contentCard-user d-flex align-items-center">
-                                            <img src="{{asset('public/uploads/users/'.$dv?->instructor->image)}}" alt="client-image"
+                                            <img src="{{asset('/uploads/users/'.$dv?->instructor->image)}}" alt="client-image"
                                                 class="rounded-circle" height="34" width="34" />
                                             <p class="font-para--md">{{$dv?->instructor->name_en}}</p>
                                         </a>
                                         <div class="price">
-                                            <span>{{$dv->price?'৳'.$dv->price:'Free'}}</span>
-                                            <del>{{$dv->old_price?'৳'.$dv->old_price:''}}</del>
+                                            <span>{{$dv->price?'RWF'.$dv->price:'Free'}}</span>
+                                            <del>{{$dv->old_price?'RWF'.$dv->old_price:''}}</del>
                                         </div>
                                     </div>
                                     <div class="contentCard-more">
                                         <div class="d-flex align-items-center">
                                             <div class="icon">
-                                                <img src="{{asset('public/frontend/dist/images/icon/star.png')}}" alt="star" />
+                                                <img src="{{asset('/frontend/dist/images/icon/star.png')}}" alt="star" />
                                             </div>
                                             <span>4.5</span>
                                         </div>
                                         <div class="eye d-flex align-items-center">
                                             <div class="icon">
-                                                <img src="{{asset('public/frontend/dist/images/icon/eye.png')}}" alt="eye" />
+                                                <img src="{{asset('/frontend/dist/images/icon/eye.png')}}" alt="eye" />
                                             </div>
                                             <span>24,517</span>
                                         </div>
                                         <div class="book d-flex align-items-center">
                                             <div class="icon">
-                                                <img src="{{asset('public/frontend/dist/images/icon/book.png')}}" alt="location" />
+                                                <img src="{{asset('/frontend/dist/images/icon/book.png')}}" alt="location" />
                                             </div>
                                             <span>{{$dv->lesson?$dv->lesson:0}} Lesson</span>
                                         </div>
                                         <div class="clock d-flex align-items-center">
                                             <div class="icon">
-                                                <img src="{{asset('public/frontend/dist/images/icon/Clock.png')}}" alt="clock" />
+                                                <img src="{{asset('/frontend/dist/images/icon/Clock.png')}}" alt="clock" />
                                             </div>
                                             <span>{{$dv->duration?$dv->duration:0}} Hours</span>
                                         </div>
@@ -355,7 +359,7 @@
                         <div class="col-xl-4 col-md-6">
                             <div class="contentCard contentCard--course">
                                 <div class="contentCard-top">
-                                    <a href="#"><img src="{{asset('public/uploads/courses/'.$bc->image)}}" alt="images"
+                                    <a href="#"><img src="{{asset('/uploads/courses/'.$bc->image)}}" alt="images"
                                             class="img-fluid" /></a>
                                 </div>
                                 <div class="contentCard-bottom">
@@ -366,37 +370,37 @@
                                     <div class="contentCard-info d-flex align-items-center justify-content-between">
                                         <a href="{{route('instructorProfile', encryptor('encrypt', $bc->instructor?->id))}}"
                                             class="contentCard-user d-flex align-items-center">
-                                            <img src="{{asset('public/uploads/users/'.$bc?->instructor->image)}}" alt="client-image"
+                                            <img src="{{asset('/uploads/users/'.$bc?->instructor->image)}}" alt="client-image"
                                                 class="rounded-circle" height="34" width="34" />
                                             <p class="font-para--md">{{$bc?->instructor->name_en}}</p>
                                         </a>
                                         <div class="price">
-                                            <span>{{$bc->price?'৳'.$bc->price:'Free'}}</span>
-                                            <del>{{$bc->old_price?'৳'.$bc->old_price:''}}</del>
+                                            <span>{{$bc->price?'RWF'.$bc->price:'Free'}}</span>
+                                            <del>{{$bc->old_price?'RWF'.$bc->old_price:''}}</del>
                                         </div>
                                     </div>
                                     <div class="contentCard-more">
                                         <div class="d-flex align-items-center">
                                             <div class="icon">
-                                                <img src="{{asset('public/frontend/dist/images/icon/star.png')}}" alt="star" />
+                                                <img src="{{asset('/frontend/dist/images/icon/star.png')}}" alt="star" />
                                             </div>
                                             <span>4.5</span>
                                         </div>
                                         <div class="eye d-flex align-items-center">
                                             <div class="icon">
-                                                <img src="{{asset('public/frontend/dist/images/icon/eye.png')}}" alt="eye" />
+                                                <img src="{{asset('/frontend/dist/images/icon/eye.png')}}" alt="eye" />
                                             </div>
                                             <span>24,517</span>
                                         </div>
                                         <div class="book d-flex align-items-center">
                                             <div class="icon">
-                                                <img src="{{asset('public/frontend/dist/images/icon/book.png')}}" alt="location" />
+                                                <img src="{{asset('/frontend/dist/images/icon/book.png')}}" alt="location" />
                                             </div>
                                             <span>{{$bc->lesson?$bc->lesson:0}} Lesson</span>
                                         </div>
                                         <div class="clock d-flex align-items-center">
                                             <div class="icon">
-                                                <img src="{{asset('public/frontend/dist/images/icon/Clock.png')}}" alt="clock" />
+                                                <img src="{{asset('/frontend/dist/images/icon/Clock.png')}}" alt="clock" />
                                             </div>
                                             <span>{{$bc->duration?$bc->duration:0}} Hours</span>
                                         </div>
@@ -425,7 +429,7 @@
                         <div class="col-xl-4 col-md-6">
                             <div class="contentCard contentCard--course">
                                 <div class="contentCard-top">
-                                    <a href="#"><img src="{{asset('public/uploads/courses/'.$ic->image)}}" alt="images"
+                                    <a href="#"><img src="{{asset('/uploads/courses/'.$ic->image)}}" alt="images"
                                             class="img-fluid" /></a>
                                 </div>
                                 <div class="contentCard-bottom">
@@ -436,37 +440,37 @@
                                     <div class="contentCard-info d-flex align-items-center justify-content-between">
                                         <a href="{{route('instructorProfile', encryptor('encrypt', $ic->instructor?->id))}}"
                                             class="contentCard-user d-flex align-items-center">
-                                            <img src="{{asset('public/uploads/users/'.$ic?->instructor->image)}}" alt="client-image"
+                                            <img src="{{asset('/uploads/users/'.$ic?->instructor->image)}}" alt="client-image"
                                                 class="rounded-circle" height="34" width="34" />
                                             <p class="font-para--md">{{$ic?->instructor->name_en}}</p>
                                         </a>
                                         <div class="price">
-                                            <span>{{$ic->price?'৳'.$ic->price:'Free'}}</span>
-                                            <del>{{$ic->old_price?'৳'.$ic->old_price:''}}</del>
+                                            <span>{{$ic->price?'RWF'.$ic->price:'Free'}}</span>
+                                            <del>{{$ic->old_price?'RWF'.$ic->old_price:''}}</del>
                                         </div>
                                     </div>
                                     <div class="contentCard-more">
                                         <div class="d-flex align-items-center">
                                             <div class="icon">
-                                                <img src="{{asset('public/frontend/dist/images/icon/star.png')}}" alt="star" />
+                                                <img src="{{asset('/frontend/dist/images/icon/star.png')}}" alt="star" />
                                             </div>
                                             <span>4.5</span>
                                         </div>
                                         <div class="eye d-flex align-items-center">
                                             <div class="icon">
-                                                <img src="{{asset('public/frontend/dist/images/icon/eye.png')}}" alt="eye" />
+                                                <img src="{{asset('/frontend/dist/images/icon/eye.png')}}" alt="eye" />
                                             </div>
                                             <span>24,517</span>
                                         </div>
                                         <div class="book d-flex align-items-center">
                                             <div class="icon">
-                                                <img src="{{asset('public/frontend/dist/images/icon/book.png')}}" alt="location" />
+                                                <img src="{{asset('/frontend/dist/images/icon/book.png')}}" alt="location" />
                                             </div>
                                             <span>{{$ic->lesson?$ic->lesson:0}} Lesson</span>
                                         </div>
                                         <div class="clock d-flex align-items-center">
                                             <div class="icon">
-                                                <img src="{{asset('public/frontend/dist/images/icon/Clock.png')}}" alt="clock" />
+                                                <img src="{{asset('/frontend/dist/images/icon/Clock.png')}}" alt="clock" />
                                             </div>
                                             <span>{{$ic->duration?$ic->duration:0}} Hours</span>
                                         </div>
@@ -493,16 +497,16 @@
         </div>
     </div>
     <div class="featured-popular-courses-shape">
-        <img src="{{asset('public/frontend/dist/images/shape/dots/dots-img-12.png')}}" alt="Shape"
+        <img src="{{asset('/frontend/dist/images/shape/dots/dots-img-12.png')}}" alt="Shape"
             class="img-fluid dot-06" />
-        <img src="{{asset('public/frontend/dist/images/shape/triangel.png')}}" alt="Shape" class="img-fluid dot-07" />
+        <img src="{{asset('/frontend/dist/images/shape/triangel.png')}}" alt="Shape" class="img-fluid dot-07" />
     </div>
 </section>
 
-{{-- Why You'll Learn With Eduguard --}}
+{{-- Why You'll Learn With LMS --}}
 <section class="section feature section section--bg-offwhite-one">
     <div class="container">
-        <h2 class="font-title--md text-center">Why You'll Learn with Eduguard</h2>
+        <h2 class="font-title--md text-center">Why You'll Learn with LMS</h2>
         <div class="row">
             <div class="col-lg-4 col-md-6">
                 <div class="cardFeature">
@@ -583,7 +587,7 @@
             <div class="col-lg-6 order-2 order-lg-0">
                 <div class="learning-rules-starts">
                     <h2 class="font-title--md">
-                        Eduguard Simple <br class="d-none d-md-block" />
+                        LMS Simple <br class="d-none d-md-block" />
                         Learning Steps
                     </h2>
                     <div class="learning-rules__wrapper">
@@ -623,14 +627,14 @@
             </div>
             <div class="col-lg-6 order-1 order-lg-0">
                 <div class="learning-rules-ends">
-                    <img src="{{asset('public/frontend/dist/images/hero/hero-img-01.jpg')}}" alt="img"
+                    <img src="{{asset('/frontend/dist/images/hero/hero-img-01.jpg')}}" alt="img"
                         class="img-fluid rounded"/>
                     <div class="learning-rules-ends-circle">
-                        <img src="{{asset('public/frontend/dist/images/shape/l03.png')}}" alt="shape"
+                        <img src="{{asset('/frontend/dist/images/shape/l03.png')}}" alt="shape"
                             class="img-fluid" />
                     </div>
                     <div class="earning-rules-ends-shape">
-                        <img src="{{asset('public/frontend/dist/images/shape/l04.png')}}" alt="shape"
+                        <img src="{{asset('/frontend/dist/images/shape/l04.png')}}" alt="shape"
                             class="img-fluid shape-1" />
                     </div>
                 </div>
@@ -638,9 +642,9 @@
         </div>
     </div>
     <div class="learning-rules-shape">
-        <img src="{{asset('public/frontend/dist/images/shape/dots/dots-img-16.png')}}" alt="shape"
+        <img src="{{asset('/frontend/dist/images/shape/dots/dots-img-16.png')}}" alt="shape"
             class="img-fluid shape-01" />
-        <img src="{{asset('public/frontend/dist/images/shape/l02.png')}}" alt="shape" class="img-fluid shape-02" />
+        <img src="{{asset('/frontend/dist/images/shape/l02.png')}}" alt="shape" class="img-fluid shape-02" />
     </div>
 </section>
 
@@ -661,7 +665,7 @@
                 <div class="testimonial__user-wrapper d-flex justify-content-between">
                     <div class="testimonial__user d-flex align-items-center">
                         <div class="testimonial__user-img">
-                            <img src="{{asset('public/frontend/dist/images/avatar/avatar-img-01.png')}}" alt="Client" />
+                            <img src="{{asset('/frontend/dist/images/avatar/avatar-img-01.png')}}" alt="Client" />
                         </div>
                         <div class="testimonial__user-info">
                             <h6>Sheikh Rashed</h6>
@@ -725,7 +729,7 @@
                 <div class="testimonial__user-wrapper d-flex justify-content-between">
                     <div class="testimonial__user d-flex align-items-center">
                         <div class="testimonial__user-img">
-                            <img src="{{asset('public/frontend/dist/images/avatar/avatar-img-02.png')}}" alt="Client" />
+                            <img src="{{asset('/frontend/dist/images/avatar/avatar-img-02.png')}}" alt="Client" />
                         </div>
                         <div class="testimonial__user-info">
                             <h6>Dev Zakir</h6>
@@ -789,7 +793,7 @@
                 <div class="testimonial__user-wrapper d-flex justify-content-between">
                     <div class="testimonial__user d-flex align-items-center">
                         <div class="testimonial__user-img">
-                            <img src="{{asset('public/frontend/dist/images/avatar/avatar-img-03.png')}}" alt="Client" />
+                            <img src="{{asset('/frontend/dist/images/avatar/avatar-img-03.png')}}" alt="Client" />
                         </div>
                         <div class="testimonial__user-info">
                             <h6>Dev Kate</h6>
@@ -848,11 +852,11 @@
         </div>
     </div>
     <div class="about-services-shape">
-        <img src="{{asset('public/frontend/dist/images/shape/line02.png')}}" alt="shape"
+        <img src="{{asset('/frontend/dist/images/shape/line02.png')}}" alt="shape"
             class="img-fluid img-shape-01" />
-        <img src="{{asset('public/frontend/dist/images/shape/dots/dots-img-13.png')}}" alt="shape"
+        <img src="{{asset('/frontend/dist/images/shape/dots/dots-img-13.png')}}" alt="shape"
             class="img-fluid img-shape-02" />
-        <img src="{{asset('public/frontend/dist/images/shape/l02.png')}}" alt="shape" class="img-fluid img-shape-03" />
+        <img src="{{asset('/frontend/dist/images/shape/l02.png')}}" alt="shape" class="img-fluid img-shape-03" />
     </div>
     <div class="container overflow-hidden">
         <div class="row mb-40">
@@ -870,27 +874,27 @@
             <div class="col-lg-12">
                 <div class="brand-area">
                     <div class="brand-area-image">
-                        <img src="{{asset('public/frontend/dist/images/versity/1.png')}}" alt="Brand"
+                        <img src="{{asset('/frontend/dist/images/versity/1.png')}}" alt="Brand"
                             class="img-fluid" />
                     </div>
                     <div class="brand-area-image">
-                        <img src="{{asset('public/frontend/dist/images/versity/2.png')}}" alt="Brand"
+                        <img src="{{asset('/frontend/dist/images/versity/2.png')}}" alt="Brand"
                             class="img-fluid" />
                     </div>
                     <div class="brand-area-image">
-                        <img src="{{asset('public/frontend/dist/images/versity/3.png')}}" alt="Brand"
+                        <img src="{{asset('/frontend/dist/images/versity/3.png')}}" alt="Brand"
                             class="img-fluid" />
                     </div>
                     <div class="brand-area-image">
-                        <img src="{{asset('public/frontend/dist/images/versity/4.png')}}" alt="Brand"
+                        <img src="{{asset('/frontend/dist/images/versity/4.png')}}" alt="Brand"
                             class="img-fluid" />
                     </div>
                     <div class="brand-area-image">
-                        <img src="{{asset('public/frontend/dist/images/versity/2.png')}}" alt="Brand"
+                        <img src="{{asset('/frontend/dist/images/versity/2.png')}}" alt="Brand"
                             class="img-fluid" />
                     </div>
                     <div class="brand-area-image">
-                        <img src="{{asset('public/frontend/dist/images/versity/5.png')}}" alt="Brand"
+                        <img src="{{asset('/frontend/dist/images/versity/5.png')}}" alt="Brand"
                             class="img-fluid" />
                     </div>
                 </div>
@@ -910,7 +914,7 @@
                         @forelse ($instructor as $i)
                         <div class="mentor">
                             <div class="mentor__img">
-                                <img src="{{asset('public/uploads/users/'.$i->image)}}" alt="Mentor image" />
+                                <img src="{{asset('/uploads/users/'.$i->image)}}" alt="Mentor image" />
                                 <ul class="list-inline">
                                     <li class="list-inline-item">
                                         <a href="#" tabindex="0">
@@ -991,9 +995,9 @@
         </div>
     </div>
     <div class="main-instructor-featured-shape">
-        <img src="{{asset('public/frontend/dist/images/shape/dots/dots-img-14.png')}}" alt="shape"
+        <img src="{{asset('/frontend/dist/images/shape/dots/dots-img-14.png')}}" alt="shape"
             class="img-fluid shape01" />
-        <img src="{{asset('public/frontend/dist/images/shape/triangel2.png')}}" alt="shape" class="img-fluid shape02" />
+        <img src="{{asset('/frontend/dist/images/shape/triangel2.png')}}" alt="shape" class="img-fluid shape02" />
     </div>
 </section>
 
@@ -1011,7 +1015,7 @@
                     @forelse ($course as $c)
                     <div class="contentCard contentCard--event contentCard--space">
                         <div class="contentCard-top">
-                            <a href="#"><img src="{{asset('public/uploads/courses/'.$c->image)}}" alt="images"
+                            <a href="#"><img src="{{asset('/uploads/courses/'.$c->image)}}" alt="images"
                                     class="img-fluid" /></a>
                         </div>
                         <div class="contentCard-bottom">
@@ -1022,14 +1026,14 @@
                             <div class="contentCard-more">
                                 <div class="d-flex align-items-center">
                                     <div class="icon">
-                                        <img src="{{asset('public/frontend/dist/images/icon/location.png')}}"
+                                        <img src="{{asset('/frontend/dist/images/icon/location.png')}}"
                                             alt="location" />
                                     </div>
                                     <span>Chicago, Illinois</span>
                                 </div>
                                 <div class="d-flex align-items-center">
                                     <div class="icon">
-                                        <img src="{{asset('public/frontend/dist/images/icon/calendar.png')}}"
+                                        <img src="{{asset('/frontend/dist/images/icon/calendar.png')}}"
                                             alt="calendar" />
                                     </div>
                                     <span>29th jan, 2020</span>
@@ -1050,7 +1054,7 @@
         </div>
     </div>
     <div class="main-events-featured-shape">
-        <img src="{{asset('public/frontend/dist/images/shape/triangel3.png')}}" alt="shape" class="img-fluid shape01" />
+        <img src="{{asset('/frontend/dist/images/shape/triangel3.png')}}" alt="shape" class="img-fluid shape01" />
     </div>
 </section>
 
@@ -1061,7 +1065,7 @@
             <div class="col-lg-6">
                 <div class="main-become-instructor-item me-12">
                     <div class="main-image">
-                        <img src="{{asset('public/frontend/dist/images/event/image01.png')}}" alt="image"
+                        <img src="{{asset('/frontend/dist/images/event/image01.png')}}" alt="image"
                             class="img-fluid" />
                     </div>
                     <div class="main-text">
@@ -1079,17 +1083,17 @@
             <div class="col-lg-6">
                 <div class="main-become-instructor-item ms-12 mb-0">
                     <div class="main-image">
-                        <img src="{{asset('public/frontend/dist/images/event/image02.png')}}" alt="image"
+                        <img src="{{asset('/frontend/dist/images/event/image02.png')}}" alt="image"
                             class="img-fluid" />
                     </div>
                     <div class="main-text">
-                        <h6 class="font-title--sm">Use Eduguard For Business</h6>
+                        <h6 class="font-title--sm">Use LMS For Business</h6>
                         <p>
                             Praesent ultricies nulla ac congue bibendum. Aliquam tempor euismod purus posuere
                             gravida. Praesent augue sapien, vulputate eu imperdiet eget, tempor at enim.
                         </p>
                         <div class="text-center">
-                            <a href="#" class="green-btn">Get Eduguard For Business</a>
+                            <a href="#" class="green-btn">Get LMS For Business</a>
                         </div>
                     </div>
                 </div>
@@ -1097,7 +1101,7 @@
         </div>
     </div>
     <div class="main-become-instructor-shape">
-        <img src="{{asset('public/frontend/dist/images/shape/line03.png')}}" alt="shape" class="img-fluid" />
+        <img src="{{asset('/frontend/dist/images/shape/line03.png')}}" alt="shape" class="img-fluid" />
     </div>
 </section>
 

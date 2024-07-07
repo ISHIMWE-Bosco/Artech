@@ -3,13 +3,13 @@
 
 @push('styles')
 <!-- Favicon icon -->
-<link rel="icon" type="image/png" sizes="16x16" href="{{asset('public/images/favicon.png')}}">
-<link rel="stylesheet" href="{{asset('public/vendor/bootstrap-select/dist/css/bootstrap-select.min.css')}}">
-<link rel="stylesheet" href="{{asset('public/css/style.css')}}">
+<link rel="icon" type="image/png" sizes="16x16" href="{{asset('/images/favicon.png')}}">
+<link rel="stylesheet" href="{{asset('/vendor/bootstrap-select/dist/css/bootstrap-select.min.css')}}">
+<link rel="stylesheet" href="{{asset('/css/style.css')}}">
 
 <!-- Pick date -->
-<link rel="stylesheet" href="{{asset('public/vendor/pickadate/themes/default.css')}}">
-<link rel="stylesheet" href="{{asset('public/vendor/pickadate/themes/default.date.css')}}">
+<link rel="stylesheet" href="{{asset('/vendor/pickadate/themes/default.css')}}">
+<link rel="stylesheet" href="{{asset('/vendor/pickadate/themes/default.date.css')}}">
 @endpush
 
 @section('content')
@@ -60,7 +60,7 @@
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-12">
                                     <div class="form-group">
-                                        <label class="form-label">নাম (বাংলায়)</label>
+                                        <label class="form-label">User Name</label>
                                         <input type="text" class="form-control" name="userName_bn"
                                             value="{{old('userName_bn', $user->name_bn)}}">
                                     </div>
@@ -77,7 +77,7 @@
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-12">
                                     <div class="form-group">
-                                        <label class="form-label">ফোন নাম্বার (বাংলায়)</label>
+                                        <label class="form-label">Contact Number </label>
                                         <input type="tel" class="form-control" name="contactNumber_bn"
                                             value="{{old('contactNumber_bn', $user->contact_bn)}}">
                                     </div>
@@ -164,10 +164,10 @@
 
 @push('scripts')
 <!-- pickdate -->
-<script src="{{asset('public/vendor/pickadate/picker.js')}}"></script>
-<script src="{{asset('public/vendor/pickadate/picker.time.js')}}"></script>
-<script src="{{asset('public/vendor/pickadate/picker.date.js')}}"></script>
+<script src="{{asset('/vendor/pickadate/picker.js')}}"></script>
+<script src="{{asset('/vendor/pickadate/picker.time.js')}}"></script>
+<script src="{{asset('/vendor/pickadate/picker.date.js')}}"></script>
 
 <!-- Pickdate -->
-<script src="{{asset('public/js/plugins-init/pickadate-init.js')}}"></script>
+<script src="{{asset('/js/plugins-init/pickadate-init.js')}}"></script>
 @endpush

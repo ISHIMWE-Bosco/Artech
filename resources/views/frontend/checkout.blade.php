@@ -58,7 +58,7 @@
                                 @php $total += $details['price'] * $details['quantity'] @endphp
                                 <div class="productContent">
                                     <div class="productContent-item__img productContent-item">
-                                        <img src="{{asset('public/uploads/courses/' . $details['image'])}}"
+                                        <img src="{{asset('/uploads/courses/' . $details['image'])}}"
                                             alt="checkout" />
                                     </div>
                                     <div class="productContent-item__info productContent-item">
@@ -68,9 +68,9 @@
                                         </h6>
                                         <p>by {{$details['instructor']}}</p>
                                         <div class="price">
-                                            <h6 class="font-para--md">{{$details['price'] ? '৳' . $details['price'] :
+                                            <h6 class="font-para--md">{{$details['price'] ? 'RWF' . $details['price'] :
                                                 'Free'}}</h6>
-                                            <p><del>{{$details['old_price'] ? '৳' . $details['old_price'] : ''}}</del>
+                                            <p><del>{{$details['old_price'] ? 'RWF' . $details['old_price'] : ''}}</del>
                                             </p>
                                         </div>
                                     </div>
@@ -84,29 +84,29 @@
                             <ul>
                                 <li>
                                     <p>Subtotal</p>
-                                    <p>{{'৳' . number_format((float) session('cart_details')['cart_total'] , 2)}}
+                                    <p>{{'RWF' . number_format((float) session('cart_details')['cart_total'] , 2)}}
                                     </p>
-                                    {{-- {{ '৳' . (session('cart_details') && array_key_exists('cart_total',
+                                    {{-- {{ 'RWF' . (session('cart_details') && array_key_exists('cart_total',
                                     session('cart_details')) ? number_format(session('cart_details')['cart_total'], 2) :
                                     '0.00') }} --}}
                                 </li>
                                 <li>
                                     <p>Coupon Discount ({{session('cart_details')['discount'] ?? 0.00}}%)</p>
-                                    <p>{{'৳' . number_format((float) isset(session('cart_details')['discount_amount']) ?
+                                    <p>{{'RWF' . number_format((float) isset(session('cart_details')['discount_amount']) ?
                                         session('cart_details')['discount_amount']: 0.00 , 2)}}</p>
                                 </li>
                                 <li>
                                     <p>Taxes (15%)</p>
-                                    <p>{{'৳' . number_format((float) session('cart_details')['tax'] , 2)}}</p>
-                                    {{-- {{ '৳' . (session('cart_details') && array_key_exists('tax',
+                                    <p>{{'RWF' . number_format((float) session('cart_details')['tax'] , 2)}}</p>
+                                    {{-- {{ 'RWF' . (session('cart_details') && array_key_exists('tax',
                                     session('cart_details')) ? number_format(session('cart_details')['tax'], 2) :
                                     '0.00') }} --}}
                                 </li>
                                 <li>
                                     <p class="font-title--card">Total:</p>
-                                    <p class="total-price font-title--card">{{'৳' .
+                                    <p class="total-price font-title--card">{{'RWF' .
                                         number_format((float)session('cart_details')['total_amount'] , 2)}}</p>
-                                    {{-- {{ '৳' . (session('cart_details') && array_key_exists('total_amount',
+                                    {{-- {{ 'RWF' . (session('cart_details') && array_key_exists('total_amount',
                                     session('cart_details')) ? number_format(session('cart_details')['total_amount'], 2)
                                     : '0.00') }} --}}
                                 </li>
@@ -249,7 +249,7 @@
                     </div>
                     <div class="col-lg-7 order-1 order-lg-0">
                         <div class="signup-area-image">
-                            <img src="{{asset('public/frontend/dist/images/signup/Illustration.png')}}"
+                            <img src="{{asset('/frontend/dist/images/signup/Illustration.png')}}"
                                 alt="Illustration Image" class="img-fluid" />
                         </div>
                     </div>
