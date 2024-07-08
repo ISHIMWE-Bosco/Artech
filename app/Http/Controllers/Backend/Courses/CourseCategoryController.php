@@ -18,7 +18,7 @@ class CourseCategoryController extends Controller
      */
     public function index()
     {
-        $data = CourseCategory::paginate(10);
+        $data = CourseCategory::get();
         return view('backend.course.courseCategory.index', compact('data'));
     }
 

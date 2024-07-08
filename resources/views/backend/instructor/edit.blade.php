@@ -34,6 +34,7 @@
                     <div class="card-header">
                         <h5 class="card-title">Basic Info</h5>
                     </div>
+                   
                     <div class="card-body">
                         <form action="{{route('instructor.update',encryptor('encrypt', $instructor->id))}}"
                             method="post" enctype="multipart/form-data">
@@ -53,7 +54,7 @@
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-12">
                                     <div class="form-group">
-                                        <label class="form-label">নাম (বাংলায়)</label>
+                                        <label class="form-label">Second Name</label>
                                         <input type="text" class="form-control" name="fullName_bn"
                                             value="{{old('fullName_bn',$instructor->name_bn)}}">
                                     </div>
@@ -70,7 +71,7 @@
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-12">
                                     <div class="form-group">
-                                        <label class="form-label">ফোন নাম্বার (বাংলায়)</label>
+                                        <label class="form-label">Contact Number</label>
                                         <input type="tel" class="form-control" name="contactNumber_bn"
                                             value="{{old('contactNumber_bn',$instructor->contact_bn)}}">
                                     </div>

@@ -66,9 +66,9 @@
                                                 <td><strong>{{$e->course?->price==null?'Free':'RWF'.$e->course?->price}}</strong></td>
                                                 <td><strong>{{$e->enrollment_date}}</strong></td>
                                                 <td>
-                                                    <a href="{{route('enrollment.edit', encryptor('encrypt',$e->id))}}"
+                                                    {{-- <a href="{{route('enrollment.edit', encryptor('encrypt',$e->id))}}"
                                                         class="btn btn-sm btn-primary" title="Edit"><i
-                                                            class="la la-pencil"></i></a>
+                                                            class="la la-pencil"></i></a> --}}
                                                     <a href="javascript:void(0);" class="btn btn-sm btn-danger"
                                                         title="Delete" onclick="$('#form{{$e->id}}').submit()"><i
                                                             class="la la-trash-o"></i></a>

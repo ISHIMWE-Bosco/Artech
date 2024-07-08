@@ -11,15 +11,17 @@
         <div class="row">
             <div class="col-lg-6 mb-lg-0 order-2 order-lg-0 d-flex align-items-center">
                 <div class="banner-two-start">
-                    <h1 class="font-title-lg">Unlock Knowledge Anywhere, Anytime with Experts.</h1>
+                    <h1 class="font-title-lg">Welcome to Private Tutor Finder – Your Personalized Learning Journey Begins Here!</h1>
                     <p>
-                        Discover a new way to learn with LMS, your destination for quality education and growth. At LMS, we make education accessible, engaging, and effective for everyone.
+                    
+                        Discover the perfect tutor for your unique needs with Private Tutor Finder. We connect you with expert tutors to help you achieve your educational goals.
 
-                        Learn from industry leaders, study at your own pace, enjoy interactive content and live sessions, and connect with a vibrant learning community. Earn recognized certificates to showcase your achievements.
-                        
-                        Start your journey with LMS today and unlock your potential! 
+Find experienced tutors, enjoy one-on-one sessions, and learn at your own pace. Whether you need help with academics, test prep, or new skills, we’ve got you covered.
+
+Start your personalized learning journey today with Private Tutor Finder and unlock your full potential!
+                    
                     </p>
-                    <form>
+                    {{-- <form>
                         <div class="banner-input">
                             <div class="main-input">
                                 <input type="text" placeholder="what do you want to learn today..." />
@@ -34,7 +36,7 @@
                                 <button class="button button-lg button--primary">Search</button>
                             </div>
                         </div>
-                    </form>
+                    </form> --}}
                 </div>
             </div>
             {{-- <div class="col-lg-5 order-1 order-lg-0">
@@ -320,7 +322,14 @@
                                             <div class="icon">
                                                 <img src="{{asset('/frontend/dist/images/icon/eye.png')}}" alt="eye" />
                                             </div>
-                                            <span>24,517</span>
+                                            <span>
+                                                @php
+                                            $visit =  DB::table('enrollments')->where('course_id',$dv->id)->count();
+                                                @endphp
+                                                {{
+                                                  $visit 
+                                                }}
+                                            </span>
                                         </div>
                                         <div class="book d-flex align-items-center">
                                             <div class="icon">
@@ -390,7 +399,14 @@
                                             <div class="icon">
                                                 <img src="{{asset('/frontend/dist/images/icon/eye.png')}}" alt="eye" />
                                             </div>
-                                            <span>24,517</span>
+                                            <span>
+                                                @php
+                                                $visit =  DB::table('enrollments')->where('course_id',$bc->id)->count();
+                                                    @endphp
+                                                    {{
+                                                      $visit 
+                                                    }}
+                                            </span>
                                         </div>
                                         <div class="book d-flex align-items-center">
                                             <div class="icon">
@@ -460,7 +476,14 @@
                                             <div class="icon">
                                                 <img src="{{asset('/frontend/dist/images/icon/eye.png')}}" alt="eye" />
                                             </div>
-                                            <span>24,517</span>
+                                            <span>
+                                                @php
+                                                $visit =  DB::table('enrollments')->where('course_id',$bc->id)->count();
+                                                    @endphp
+                                                    {{
+                                                      $visit 
+                                                    }}
+                                            </span>
                                         </div>
                                         <div class="book d-flex align-items-center">
                                             <div class="icon">
@@ -503,76 +526,35 @@
     </div>
 </section>
 
-{{-- Why You'll Learn With LMS --}}
+{{-- Why You'll Learn With P.T.F --}}
 <section class="section feature section section--bg-offwhite-one">
     <div class="container">
-        <h2 class="font-title--md text-center">Why You'll Learn with LMS</h2>
+        <h2 class="font-title--md text-center">Why You'll Learn with P.T.F</h2>
         <div class="row">
             <div class="col-lg-4 col-md-6">
                 <div class="cardFeature">
-                    <div class="cardFeature__icon cardFeature__icon--bg-g">
-                        <svg width="32" height="28" viewBox="0 0 32 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M2 2H10.4C11.8852 2 13.3096 2.5619 14.3598 3.5621C15.41 4.56229 16 5.91885 16 7.33333V26C16 24.9391 15.5575 23.9217 14.7699 23.1716C13.9822 22.4214 12.9139 22 11.8 22H2V2Z"
-                                stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                            <path
-                                d="M30 2H21.6C20.1148 2 18.6904 2.5619 17.6402 3.5621C16.59 4.56229 16 5.91885 16 7.33333V26C16 24.9391 16.4425 23.9217 17.2302 23.1716C18.0178 22.4214 19.0861 22 20.2 22H30V2Z"
-                                stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
-                    </div>
-                    <h5 class="font-title--xs">250k online course</h5>
+                    
+                    <h5 class="font-title--xs">Expert Tutors</h5>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sed commodo enim Fusce sed.
+                        Connect with highly qualified and experienced tutors in various subjects.
                     </p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
                 <div class="cardFeature">
-                    <div class="cardFeature__icon cardFeature__icon--bg-b">
-                        <svg width="28" height="27" viewBox="0 0 28 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M19.3855 12.224C21.8743 12.224 23.8915 10.2067 23.8915 7.71794C23.8915 5.23054 21.8743 3.21191 19.3855 3.21191"
-                                stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                            <path
-                                d="M21.4575 17.1211C22.201 17.1717 22.939 17.2783 23.6675 17.4395C24.6775 17.6404 25.8938 18.0546 26.3257 18.9607C26.6018 19.5415 26.6018 20.218 26.3257 20.7989C25.8952 21.705 24.6775 22.1191 23.6675 22.3269"
-                                stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M10.5994 18.0913C15.6425 18.0913 19.9504 18.8553 19.9504 21.9071C19.9504 24.9604 15.6699 25.7503 10.5994 25.7503C5.55624 25.7503 1.24976 24.9877 1.24976 21.9345C1.24976 18.8813 5.52891 18.0913 10.5994 18.0913Z"
-                                stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M10.5993 13.7349C7.27274 13.7349 4.60767 11.0684 4.60767 7.74188C4.60767 4.41669 7.27274 1.75024 10.5993 1.75024C13.9259 1.75024 16.5923 4.41669 16.5923 7.74188C16.5923 11.0684 13.9259 13.7349 10.5993 13.7349Z"
-                                stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
-                    </div>
-                    <h5 class="font-title--xs">Expert Instructors</h5>
+                    
+                    <h5 class="font-title--xs">Tailored Learning</h5>
                     <p>
-                        Vivamus interdum neque massa, eget mattis mi gravida eget. Donec et dictum justo. Vivamus
-                        interdum.
+                        Enjoy one-on-one sessions customized to your individual learning style and pace.
                     </p>
                 </div>
             </div>
             <div class="col-lg-4 col-md-6">
                 <div class="cardFeature">
-                    <div class="cardFeature__icon cardFeature__icon--bg-r">
-                        <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M25.2502 13.2495C25.2502 19.8774 19.8781 25.2495 13.2502 25.2495C6.62235 25.2495 1.25024 19.8774 1.25024 13.2495C1.25024 6.62162 6.62235 1.24951 13.2502 1.24951C19.8781 1.24951 25.2502 6.62162 25.2502 13.2495Z"
-                                stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                            <path d="M17.7021 17.0667L12.8113 14.1491V7.86108" stroke="currentColor" stroke-width="2.5"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </div>
-                    <h5 class="font-title--xs">Lifetime Access</h5>
+                    
+                    <h5 class="font-title--xs">Flexible Scheduling</h5>
                     <p>
-                        Vivamus cursus libero quis lobortis mattis. Suspendisse in malesuada mi. Maecenas vel
-                        euismod turpis.
+                        Arrange sessions that fit your busy schedule, anytime, anywhere.
                     </p>
                 </div>
             </div>
@@ -586,18 +568,17 @@
         <div class="row align-items-center">
             <div class="col-lg-6 order-2 order-lg-0">
                 <div class="learning-rules-starts">
-                    <h2 class="font-title--md">
-                        LMS Simple <br class="d-none d-md-block" />
+                    <h3 class="font-title--md">
+                        Private Tutor Finder is Simple <br class="d-none d-md-block" />
                         Learning Steps
-                    </h2>
+                    </h3>
                     <div class="learning-rules__wrapper">
                         <div class="learning-rules-item">
                             <div class="item-number"><span>01.</span></div>
                             <div class="item-text">
                                 <h6>Make Your Own Place.</h6>
                                 <p>
-                                    Fusce dictum, velit eu placerat consectetur, ante nisl auctor magna, sit amet
-                                    fringilla urna nibh a risus.
+                                    Create your personalized profile to get started.
                                 </p>
                             </div>
                         </div>
@@ -606,8 +587,7 @@
                             <div class="item-text">
                                 <h6>Find Best Course With Better Filtter.</h6>
                                 <p>
-                                    Morbi id est a risus sollicitudin maximus. Fusce lorem neque, tincidunt vel
-                                    rhoncus eget, convallis ullamcorper sem.
+                                    Use our advanced filters to discover the perfect course tailored to your needs.
                                 </p>
                             </div>
                         </div>
@@ -616,8 +596,7 @@
                             <div class="item-text">
                                 <h6>And Become a Master in Your Field.</h6>
                                 <p>
-                                    Sed pulvinar dignissim neque, ac consectetur urna tincidunt vel. Sed congue
-                                    nulla sed tempus ultrices.
+                                    Learn from top-notch tutors and excel in your chosen area.
                                 </p>
                             </div>
                         </div>
@@ -1087,13 +1066,13 @@
                             class="img-fluid" />
                     </div>
                     <div class="main-text">
-                        <h6 class="font-title--sm">Use LMS For Business</h6>
+                        <h6 class="font-title--sm">Use P.T.F For Business</h6>
                         <p>
                             Praesent ultricies nulla ac congue bibendum. Aliquam tempor euismod purus posuere
                             gravida. Praesent augue sapien, vulputate eu imperdiet eget, tempor at enim.
                         </p>
                         <div class="text-center">
-                            <a href="#" class="green-btn">Get LMS For Business</a>
+                            <a href="#" class="green-btn">Get P.T.F For Business</a>
                         </div>
                     </div>
                 </div>

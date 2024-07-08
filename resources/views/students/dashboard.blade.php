@@ -227,7 +227,7 @@
                                             Conference on Education</a>
                                     </h5>
                                     <div class="contentCard-info d-flex align-items-center justify-content-between">
-                                        <a href="instructor-profile.html"
+                                        <a href="#"
                                             class="contentCard-user d-flex align-items-center">
                                             <img src="{{asset('/frontend/dist/images/courses/7.png')}}"
                                                 alt="client-image" class="rounded-circle" />
@@ -259,7 +259,7 @@
                                             Conference on Education</a>
                                     </h5>
                                     <div class="contentCard-info d-flex align-items-center justify-content-between">
-                                        <a href="instructor-profile.html"
+                                        <a href="#"
                                             class="contentCard-user d-flex align-items-center">
                                             <img src="{{asset('/frontend/dist/images/courses/7.png')}}"
                                                 alt="client-image" class="rounded-circle" />
@@ -291,7 +291,7 @@
                                             Conference on Education</a>
                                     </h5>
                                     <div class="contentCard-info d-flex align-items-center justify-content-between">
-                                        <a href="instructor-profile.html"
+                                        <a href="#"
                                             class="contentCard-user d-flex align-items-center">
                                             <img src="{{asset('/frontend/dist/images/courses/7.png')}}"
                                                 alt="client-image" class="rounded-circle" />
@@ -354,7 +354,7 @@
                                             Conference on Education</a>
                                     </h5>
                                     <div class="contentCard-info d-flex align-items-center justify-content-between">
-                                        <a href="instructor-profile.html"
+                                        <a href="#"
                                             class="contentCard-user d-flex align-items-center">
                                             <img src="{{asset('/frontend/dist/images/courses/7.png')}}"
                                                 alt="client-image" class="rounded-circle" />
@@ -386,7 +386,7 @@
                                             Conference on Education</a>
                                     </h5>
                                     <div class="contentCard-info d-flex align-items-center justify-content-between">
-                                        <a href="instructor-profile.html"
+                                        <a href="#"
                                             class="contentCard-user d-flex align-items-center">
                                             <img src="{{asset('/frontend/dist/images/courses/7.png')}}"
                                                 alt="client-image" class="rounded-circle" />
@@ -418,7 +418,7 @@
                                             Conference on Education</a>
                                     </h5>
                                     <div class="contentCard-info d-flex align-items-center justify-content-between">
-                                        <a href="instructor-profile.html"
+                                        <a href="#"
                                             class="contentCard-user d-flex align-items-center">
                                             <img src="{{asset('/frontend/dist/images/courses/7.png')}}"
                                                 alt="client-image" class="rounded-circle" />

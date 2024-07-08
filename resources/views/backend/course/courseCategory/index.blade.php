@@ -60,9 +60,9 @@
                                             </tr>
                                         </thead>
                                         <tbody>
-                                            @forelse ($data as $d)
+                                            @forelse ($data as $key=> $d)
                                             <tr>
-                                                <td><strong>{{$d->id}}</strong></td>
+                                                <td><strong>{{++$key}}</strong></td>
                                                 <td><strong>{{$d->category_name}}</strong></td>
                                                 <td>
                                                     <span class="badge {{$d->category_status==1?"

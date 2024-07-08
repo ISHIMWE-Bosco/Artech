@@ -185,7 +185,7 @@
                             </div>
                             <div class="mentor__title">
                                 <h6>
-                                    <a href="instructor-profile.html" tabindex="0">Abram Philips</a>
+                                    <a href="#" tabindex="0">Abram Philips</a>
                                 </h6>
                                 <p>Adobe Instructor</p>
                             </div>
@@ -225,7 +225,7 @@
                             </div>
                             <div class="mentor__title">
                                 <h6>
-                                    <a href="instructor-profile.html" tabindex="0">Abram Philips</a>
+                                    <a href="#" tabindex="0">Abram Philips</a>
                                 </h6>
                                 <p>Adobe Instructor</p>
                             </div>
@@ -265,7 +265,7 @@
                             </div>
                             <div class="mentor__title">
                                 <h6>
-                                    <a href="instructor-profile.html" tabindex="0">Sheikh Rashed</a>
+                                    <a href="#" tabindex="0">Sheikh Rashed</a>
                                 </h6>
                                 <p>Adobe Instructor</p>
                             </div>
@@ -305,7 +305,7 @@
                             </div>
                             <div class="mentor__title">
                                 <h6>
-                                    <a href="instructor-profile.html" tabindex="0">Abram Philips</a>
+                                    <a href="#" tabindex="0">Abram Philips</a>
                                 </h6>
                                 <p>Adobe Instructor</p>
                             </div>
@@ -344,7 +344,7 @@
                                 </ul>
                             </div>
                             <div class="mentor__title">
-                                <h6><a href="instructor-profile.html" tabindex="0">Dev Taher</a></h6>
+                                <h6><a href="#" tabindex="0">Dev Taher</a></h6>
                                 <p>Adobe Instructor</p>
                             </div>
                         </div>
@@ -383,7 +383,7 @@
                             </div>
                             <div class="mentor__title">
                                 <h6>
-                                    <a href="instructor-profile.html" tabindex="0">Zakir Hossain</a>
+                                    <a href="#" tabindex="0">Zakir Hossain</a>
                                 </h6>
                                 <p>Adobe Instructor</p>
                             </div>

@@ -137,7 +137,7 @@ class InstructorController extends Controller
             }
 
             if ($instructor->save()) {
-                $user = User::where('instructor_id', $instructor->id)->first();
+                $user = User::where('role_id', $instructor->id)->first();
                 $user->instructor_id = $instructor->id;
                 $user->name_en = $request->fullName_en;
                 $user->email = $request->emailAddress;

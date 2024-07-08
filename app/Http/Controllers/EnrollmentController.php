@@ -60,8 +60,14 @@ class EnrollmentController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(Enrollment $enrollment)
+   
+
+    public function destroy($id)
     {
-        //
+        $data = Enrollment::findOrFail(encryptor('decrypt', $id));
+        if ($data->delete()) {
+            $this->notice::error('Enlorment Data has Deleted!');
+            return redirect()->back();
+        }
     }
 }

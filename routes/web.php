@@ -125,6 +125,7 @@ Route::post('/payment/ssl/notify', [sslcz::class, 'notify'])->name('payment.ssl.
 Route::post('/payment/ssl/cancel', [sslcz::class, 'cancel'])->name('payment.ssl.cancel');
 
 
+Route::post('/contact', [App\Http\Controllers\ContactController::class, 'sendmail'])->name('contact.send');
 
 
 Route::get('/about', function () {

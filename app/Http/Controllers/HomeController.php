@@ -21,7 +21,7 @@ class HomeController extends Controller
 
         $developmentCategories = CourseCategory::whereIn('category_name', ['Web Development', 'Mobile Development', 'Game Development', 'Database Design & Development', 'Data Science'])->pluck('id')->toArray();
         $developmentCourses = Course::whereIn('course_category_id', $developmentCategories)->where('tag', 'popular')->get();
-
+// dd($developmentCourses);
         $businessCategories = CourseCategory::whereIn('category_name', ['Digital Marketing', 'Entrepreneurship'])->pluck('id')->toArray();
         $businessCourses = Course::whereIn('course_category_id', $businessCategories)->where('tag', 'popular')->get();
 
