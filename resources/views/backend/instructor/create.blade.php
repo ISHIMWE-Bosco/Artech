@@ -32,7 +32,7 @@
             <div class="col-xl-12 col-xxl-12 col-sm-12">
                 <div class="card">
                     <div class="card-header">
-                        <h5 class="card-title">Basic Info</h5>
+                        <h5 class="card-title">Basic Information</h5>
                     </div>
                     <div class="card-body">
                         <form action="{{route('instructor.store')}}" method="post" enctype="multipart/form-data">
@@ -40,7 +40,7 @@
                             <div class="row">
                                 <div class="col-lg-6 col-md-6 col-sm-12">
                                     <div class="form-group">
-                                        <label class="form-label">Name</label>
+                                        <label class="form-label">Names</label>
                                         <input type="text" class="form-control" name="fullName_en"
                                             value="{{old('fullName_en')}}">
                                     </div>
@@ -50,7 +50,7 @@
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-12">
                                     <div class="form-group">
-                                        <label class="form-label">নাম (বাংলায়)</label>
+                                        <label class="form-label">Aditional name (optional)</label>
                                         <input type="text" class="form-control" name="fullName_bn"
                                             value="{{old('fullName_bn')}}">
                                     </div>
@@ -58,7 +58,7 @@
                                 <div class="col-lg-6 col-md-6 col-sm-12">
                                     <div class="form-group">
                                         <label class="form-label">Phone Number</label>
-                                        <input type="tel" class="form-control" name="contactNumber_en"
+                                        <input type="tel" class="form-control" name="contactNumber_en" maxlength="10"
                                             value="{{old('contactNumber_en')}}">
                                     </div>
                                     @if($errors->has('contactNumber_en'))
@@ -67,7 +67,7 @@
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-12">
                                     <div class="form-group">
-                                        <label class="form-label">ফোন নাম্বার (বাংলায়)</label>
+                                        <label class="form-label">Contact (optional)</label>
                                         <input type="tel" class="form-control" name="contactNumber_bn"
                                             value="{{old('contactNumber_bn')}}">
                                     </div>

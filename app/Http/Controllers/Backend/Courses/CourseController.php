@@ -46,7 +46,7 @@ class CourseController extends Controller
      */
     public function store(AddNewRequest $request)
     {
-        try {
+        // try {
             $course = new Course;
             $course->title_en = $request->courseTitle_en;
             $course->title_bn = $request->courseTitle_bn;
@@ -83,10 +83,10 @@ class CourseController extends Controller
                 return redirect()->route('course.index')->with('success', 'Data Saved');
             else
                 return redirect()->back()->withInput()->with('error', 'Please try again');
-        } catch (Exception $e) {
-            dd($e);
-            return redirect()->back()->withInput()->with('error', 'Please try again');
-        }
+        // } catch (Exception $e) {
+        //     // dd($e);
+        //     return redirect()->back()->withInput()->with('error', 'Please try again');
+        // }
     }
 
     /**

@@ -129,7 +129,7 @@
                             <span class="nav-text">Dashboard</span>
                         </a>
                     </li>
-                    <li><a class="ai-icon" href="{{route('home')}}" aria-expanded="false">
+                    <li><a class="ai-icon" href="{{route('dashboard')}}" aria-expanded="false">
                             <i class="las la-home"></i>
                             <span class="nav-text">Home</span>
                         </a>

@@ -375,7 +375,7 @@
                         <h6>Company</h6>
                         <ul>
                             <li><a href="about.html">About Us</a></li>
-                            <li><a href="course-search.html">Courses</a></li>
+                            <li><a href="#">Courses</a></li>
                             <li><a href="#">career</a></li>
                             <li><a href="#">Affiliate</a></li>
                         </ul>

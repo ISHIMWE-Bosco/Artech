@@ -59,7 +59,7 @@
                 </div>
             </div>
         </div>
-        <div class="row">
+        {{-- <div class="row">
             <div class="col-lg-4">
                 <div class="card">
                     <div class="card-body">
@@ -90,7 +90,7 @@
                             <p>A small river named Duden flows by their place and supplies it with the necessary
                                 regelialia. It is a paradisematic country, in which roasted parts of sentences fly into
                                 your mouth.</p>
-                        </div>
+                        </div> 
                         <div class="profile-interest mt-4 pb-2 border-bottom-1">
                             <h5 class="text-primary d-inline">Interest</h5>
                             <div class="row mt-4">
@@ -131,8 +131,8 @@
                                     </a>
                                 </div>
                             </div>
-                        </div>
-                        <div class="profile-news mt-4 pb-3">
+                        </div> 
+                         <div class="profile-news mt-4 pb-3">
                             <h5 class="text-primary d-inline">Our Latest News</h5>
                             <div class="media pt-3 pb-3">
                                 <img src="{{asset('/images/profile/5.jpg')}}" alt="image" class="mr-3">
@@ -158,7 +158,7 @@
                                         again because it's such a great read</p>
                                 </div>
                             </div>
-                        </div>
+                        </div> 
                     </div>
                 </div>
             </div>
@@ -394,7 +394,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> --}}
     </div>
 </div>
 

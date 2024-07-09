@@ -628,7 +628,7 @@ Start your personalized learning journey today with Private Tutor Finder and unl
 </section>
 
 <!--  About Services Starts Here -->
-<section class="section about-services section section--bg-offgradient">
+{{-- <section class="section about-services section section--bg-offgradient">
     <div class="container about-services-area">
         <div class="row">
             <div class="col-lg-6 text-center mx-auto">
@@ -880,7 +880,7 @@ Start your personalized learning journey today with Private Tutor Finder and unl
             </div>
         </div>
     </div>
-</section>
+</section> --}}
 
 <!-- Best Instructors Starts Here -->
 <section class="section best-instructor-featured overflow-hidden main-instructor-featured">

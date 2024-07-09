@@ -47,7 +47,7 @@
             </div>
             <div class="col-lg-6 mt-4 mt-lg-0">
                 <div class="checkout-area-summery">
-                    <h6 class="checkout-area__label">Summery</h6>
+                    <h6 class="checkout-area__label">Summary</h6>
 
                     <div class="cart">
                         <div class="cart__includes-info cart__includes-info--bordertop-0">

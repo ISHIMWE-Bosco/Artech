@@ -44,13 +44,13 @@ class StudentController extends Controller
             $student->contact_en = $request->contactNumber_en;
             $student->contact_bn = $request->contactNumber_bn;
             $student->email = $request->emailAddress;
-            $student->role_id = $request->roleId;
+            // $student->role_id = $request->roleId;
             $student->date_of_birth = $request->birthDate;
             $student->gender = $request->gender;
             $student->status = $request->status;
             $student->password = Hash::make($request->password);
             $student->language = 'en';
-            $student->access_block = $request->accessBlock;
+            // $student->access_block = $request->accessBlock;
 
             if ($request->hasFile('image')) {
                 $imageName = rand(111, 999) . time() . '.' . $request->image->extension();
@@ -99,26 +99,28 @@ class StudentController extends Controller
             $student->contact_en = $request->contactNumber_en;
             $student->contact_bn = $request->contactNumber_bn;
             $student->email = $request->emailAddress;
-            $student->role_id = $request->roleId;
+            // $student->role_id = $request->roleId;
             $student->date_of_birth = $request->birthDate;
             $student->gender = $request->gender;
             $student->status = $request->status;
             $student->password = Hash::make($request->password);
             $student->language = 'en';
-            $student->access_block = $request->accessBlock;
+            // $student->access_block = $request->accessBlock;
 
             if ($request->hasFile('image')) {
                 $imageName = rand(111, 999) . time() . '.' . $request->image->extension();
                 $request->image->move(public_path('uploads/students'), $imageName);
                 $student->image = $imageName;
             }
-            if ($student->save())
+            if ($student->save()){
                 return redirect()->route('student.index')->with('success', 'Data Saved');
-            else
+            }
+            else{
                 return redirect()->back()->withInput()->with('error', 'Please try again');
+            }
         } catch (Exception $e) {
             // dd($e);
-            return redirect()->back()->withInput()->with('error', 'Please try again');
+            return redirect()->back()->withInput()->with('error', 'Please check and try again');
         }
     }
 

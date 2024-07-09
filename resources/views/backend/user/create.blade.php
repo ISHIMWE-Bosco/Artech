@@ -16,7 +16,7 @@
         <div class="row page-titles mx-0">
             <div class="col-sm-6 p-md-0">
                 <div class="welcome-text">
-                    <h4>Add User</h4>
+                    <h4>Add New User</h4>
                 </div>
             </div>
             <div class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
@@ -32,7 +32,7 @@
             <div class="col-xl-12 col-xxl-12 col-sm-12">
                 <div class="card">
                     <div class="card-header">
-                        <h5 class="card-title">Basic Info</h5>
+                        <h5 class="card-title">Basic Informationrmation</h5>
                     </div>
                     <div class="card-body">
                         <form action="{{route('user.store')}}" method="post" enctype="multipart/form-data">
@@ -50,15 +50,15 @@
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-12">
                                     <div class="form-group">
-                                        <label class="form-label">নাম (বাংলায়)</label>
+                                        <label class="form-label">Username</label> <small>(optional)</small>
                                         <input type="text" class="form-control" name="userName_bn"
-                                            value="{{old('userName_bn')}}">
+                                            value="{{old('userName_bn')}}" >
                                     </div>
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-12">
                                     <div class="form-group">
                                         <label class="form-label">Phone Number</label>
-                                        <input type="tel" class="form-control" name="contactNumber_en"
+                                        <input type="tel" class="form-control" max="10" name="contactNumber_en"
                                             value="{{old('contactNumber_en')}}">
                                     </div>
                                     @if($errors->has('contactNumber_en'))
@@ -67,7 +67,7 @@
                                 </div>
                                 <div class="col-lg-6 col-md-6 col-sm-12">
                                     <div class="form-group">
-                                        <label class="form-label">ফোন নাম্বার (বাংলায়)</label>
+                                        <label class="form-label">Contact Number <small>(optional)</small></label>
                                         <input type="tel" class="form-control" name="contactNumber_bn"
                                             value="{{old('contactNumber_bn')}}">
                                     </div>

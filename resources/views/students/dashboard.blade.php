@@ -85,21 +85,21 @@
                         data-bs-target="#nav-coursesall" type="button" role="tab" aria-controls="nav-coursesall"
                         aria-selected="false">All Courses</button>
 
-                    <button class="nav-link" id="nav-activecourses-tab" data-bs-toggle="tab"
+                    {{-- <button class="nav-link" id="nav-activecourses-tab" data-bs-toggle="tab"
                         data-bs-target="#nav-activecourses" type="button" role="tab" aria-controls="nav-activecourses"
                         aria-selected="false">
                         Active Courses
-                    </button>
+                    </button> --}}
 
-                    <button class="nav-link" id="nav-completedcourses-tab" data-bs-toggle="tab"
-                        data-bs-target="#nav-completedcourses" type="button" role="tab"
-                        aria-controls="nav-completedcourses" aria-selected="false">
+                    {{-- <button class="nav-link" id="nav-completedcourses-tab" data-bs-toggle="tab"
+                        data-bs-target="#" type="button" role="tab"
+                        aria-controls="" aria-selected="false">
                         Completed Courses
-                    </button>
+                    </button> --}}
 
-                    <button class="nav-link" id="nav-purchase-tab" data-bs-toggle="tab" data-bs-target="#nav-purchase"
+                    {{-- <button class="nav-link" id="nav-purchase-tab" data-bs-toggle="tab" data-bs-target="#nav-purchase"
                         type="button" role="tab" aria-controls="nav-purchase" aria-selected="false">Purchase
-                        History</button>
+                        History</button> --}}
 
                     <button class="nav-link "><a href="{{route('student_profile')}}"
                             class="text-secondary">Profile</a></button>
@@ -121,9 +121,7 @@
                                     <div class="col-md-6 col-12 mx-auto text-center">
                                         <h5 class="font-title--sm">Invest in your career with Us</h5>
                                         <p class="my-4 font-para--lg">
-                                            Duis posuere maximus arcu eu tincidunt. Nam rutrum, nibh vitae tempus
-                                            venenatis, ex tortor ultricies
-                                            magna, et faucibus magna eros quis arcu.
+                                            Dive back into your learning journey and continue exploring your courses. Remember, each step you take brings you closer to mastering new skills and achieving your goals.
                                         </p>
                                         <a href="{{route('searchCourse')}}"
                                             class="button button-md button--primary">Let’s Go</a>
@@ -338,7 +336,7 @@
                 </div>
 
                 {{-- Completed Courses --}}
-                <div class="tab-pane fade" id="nav-completedcourses" role="tabpanel"
+                {{-- <div class="tab-pane fade" id="nav-completedcourses" role="tabpanel"
                     aria-labelledby="nav-completedcourses-tab">
                     <div class="row">
                         <div class="col-lg-4 col-md-6 col-md-6 mb-4">
@@ -462,10 +460,10 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> --}}
 
                 {{-- Purchase History --}}
-                <div class="tab-pane fade" id="nav-purchase" role="tabpanel" aria-labelledby="nav-purchase-tab">
+                {{-- <div class="tab-pane fade" id="nav-purchase" role="tabpanel" aria-labelledby="nav-purchase-tab">
                     @foreach ($checkout as $e)
                     @if ($e->cart_data)
                     <div class="row mb-3">
@@ -620,7 +618,7 @@
                             </p>
                         </div>
                     </div>
-                </div>
+                </div> --}}
 
             </div>
         </div>
