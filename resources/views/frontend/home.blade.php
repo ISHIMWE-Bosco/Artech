@@ -169,20 +169,20 @@ Start your personalized learning journey today with Private Tutor Finder and unl
                                         </div>
                                     </div>
                                     <div class="contentCard-more">
-                                        <div class="d-flex align-items-center">
+                                        {{-- <div class="d-flex align-items-center">
                                             <div class="icon">
                                                 <img src="{{asset('/frontend/dist/images/icon/star.png')}}"
                                                     alt="star" />
                                             </div>
                                             <span>4.5</span>
-                                        </div>
-                                        <div class="eye d-flex align-items-center">
+                                        </div> --}}
+                                        {{-- <div class="eye d-flex align-items-center">
                                             <div class="icon">
                                                 <img src="{{asset('/frontend/dist/images/icon/eye.png')}}"
                                                     alt="eye" />
                                             </div>
                                             <span>24,517</span>
-                                        </div>
+                                        </div> --}}
                                         <div class="book d-flex align-items-center">
                                             <div class="icon">
                                                 <img src="{{asset('/frontend/dist/images/icon/book.png')}}"
