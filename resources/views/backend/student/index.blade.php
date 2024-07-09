@@ -53,7 +53,7 @@
                                                 <th>{{__('Name')}}</th>
                                                 <th>{{__('Email')}}</th>
                                                 <th>{{__('Contact')}}</th>
-                                                <th>{{__('Role')}}</th>
+                                                {{-- <th>{{__('Role')}}</th> --}}
                                                 <th>{{__('Gender')}}</th>
                                                 <th>{{__('Status')}}</th>
                                                 <th>{{__('Action')}}</th>
@@ -67,7 +67,7 @@
                                                 <td><strong>{{$d->name_en}}</strong></td>
                                                 <td>{{$d->email}}</td>
                                                 <td>{{$d->contact_en}}</td>
-                                                <td>{{$d->role?->name}}</td>
+                                                {{-- <td>{{$d->role?->name}}</td> --}}
                                                 <td>
                                                    {{ $d->gender == 'male' ? __('Male') : ($d->gender == 'female' ? __('Female') : __('Other')) }}
                                                 </td>
