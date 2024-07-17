@@ -11,14 +11,14 @@
         <div class="row">
             <div class="col-lg-6 mb-lg-0 order-2 order-lg-0 d-flex align-items-center">
                 <div class="banner-two-start">
-                    <h1 class="font-title-lg">Welcome to Private Tutor Finder – Your Personalized Learning Journey Begins Here!</h1>
+                    <h1 class="font-title-lg">Welcome to E-learning – Your Personalized Learning Journey Begins Here!</h1>
                     <p>
                     
-                        Discover the perfect tutor for your unique needs with Private Tutor Finder. We connect you with expert tutors to help you achieve your educational goals.
+                        Discover the perfect tutor for your unique needs with E-learning. We connect you with expert tutors to help you achieve your educational goals.
 
 Find experienced tutors, enjoy one-on-one sessions, and learn at your own pace. Whether you need help with academics, test prep, or new skills, we’ve got you covered.
 
-Start your personalized learning journey today with Private Tutor Finder and unlock your full potential!
+Start your personalized learning journey today with E-learning and unlock your full potential!
                     
                     </p>
                     {{-- <form>
@@ -526,10 +526,10 @@ Start your personalized learning journey today with Private Tutor Finder and unl
     </div>
 </section>
 
-{{-- Why You'll Learn With P.T.F --}}
+{{-- Why You'll Learn With E-learning --}}
 <section class="section feature section section--bg-offwhite-one">
     <div class="container">
-        <h2 class="font-title--md text-center">Why You'll Learn with P.T.F</h2>
+        <h2 class="font-title--md text-center">Why You'll Learn with E-learning</h2>
         <div class="row">
             <div class="col-lg-4 col-md-6">
                 <div class="cardFeature">
@@ -569,7 +569,7 @@ Start your personalized learning journey today with Private Tutor Finder and unl
             <div class="col-lg-6 order-2 order-lg-0">
                 <div class="learning-rules-starts">
                     <h3 class="font-title--md">
-                        Private Tutor Finder is Simple <br class="d-none d-md-block" />
+                        E-learning is Simple <br class="d-none d-md-block" />
                         Learning Steps
                     </h3>
                     <div class="learning-rules__wrapper">
@@ -981,7 +981,7 @@ Start your personalized learning journey today with Private Tutor Finder and unl
 </section>
 
 <!--  Latest Events Featured Starts Here -->
-<section class="section section--bg-offwhite-three latest-events-featured main-events-featured">
+{{-- <section class="section section--bg-offwhite-three latest-events-featured main-events-featured">
     <div class="container">
         <div class="row">
             <div class="col-lg-12">
@@ -1035,10 +1035,10 @@ Start your personalized learning journey today with Private Tutor Finder and unl
     <div class="main-events-featured-shape">
         <img src="{{asset('/frontend/dist/images/shape/triangel3.png')}}" alt="shape" class="img-fluid shape01" />
     </div>
-</section>
+</section> --}}
 
 <!--  Main Become Instructor Starts Here -->
-<section class="section main-become-instructor">
+{{-- <section class="section main-become-instructor">
     <div class="container">
         <div class="row">
             <div class="col-lg-6">
@@ -1066,13 +1066,13 @@ Start your personalized learning journey today with Private Tutor Finder and unl
                             class="img-fluid" />
                     </div>
                     <div class="main-text">
-                        <h6 class="font-title--sm">Use P.T.F For Business</h6>
+                        <h6 class="font-title--sm">Use E-learning For Business</h6>
                         <p>
                             Praesent ultricies nulla ac congue bibendum. Aliquam tempor euismod purus posuere
                             gravida. Praesent augue sapien, vulputate eu imperdiet eget, tempor at enim.
                         </p>
                         <div class="text-center">
-                            <a href="#" class="green-btn">Get P.T.F For Business</a>
+                            <a href="#" class="green-btn">Get E-learning For Business</a>
                         </div>
                     </div>
                 </div>
@@ -1082,10 +1082,10 @@ Start your personalized learning journey today with Private Tutor Finder and unl
     <div class="main-become-instructor-shape">
         <img src="{{asset('/frontend/dist/images/shape/line03.png')}}" alt="shape" class="img-fluid" />
     </div>
-</section>
+</section> --}}
 
 <!-- News Letter Starts Here -->
-<section style="background-color: #ebebf2;">
+{{-- <section style="background-color: #ebebf2;">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 mx-auto">
@@ -1107,7 +1107,7 @@ Start your personalized learning journey today with Private Tutor Finder and unl
             </div>
         </div>
     </div>
-</section>
+</section> --}}
 
 @endsection
 

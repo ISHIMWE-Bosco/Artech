@@ -41,7 +41,7 @@
                     <div id="list-view" class="tab-pane fade active show col-lg-12">
                         <div class="card">
                             <div class="card-header">
-                                <h4 class="card-title">All Students List </h4>
+                                <h4 class="card-title">All users List </h4>
                                 <a href="{{route('user.create')}}" class="btn btn-primary">+ Add new</a>
                             </div>
                             <div class="card-body">

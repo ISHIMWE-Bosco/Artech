@@ -9,7 +9,7 @@
     <title>{{ENV('APP_NAME')}} | @yield('title')</title>
 
     <!-- Favicon icon -->
-    <link rel="icon" type="image/png" sizes="16x16" href="{{asset('/images/favicon.png')}}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{{asset('/images/logo.png')}}">
     <link rel="stylesheet" href="{{asset('/vendor/bootstrap-select/dist/css/bootstrap-select.min.css')}}">
     <link rel="stylesheet" href="{{asset('/css/style.css')}}">
 
@@ -30,9 +30,9 @@
         ***********************************-->
         <div class="nav-header">
             <a href="{{url('admin/dashboard')}}" class="brand-logo">
-                <img class="logo-abbr" src="{{asset('/images/logo-white.png')}}" alt="">
-                <img class="logo-compact" src="{{asset('/images/d-logo.png')}}" alt="">
-                <img class="brand-title" src="{{asset('/images/d-logo.png')}}" alt="">
+                <img class="logo-abbr" src="{{asset('/images/logo.png')}}" alt="">
+                <img class="logo-compact" src="{{asset('/images/logo.png')}}" alt="">
+                <img class="brand-title" src="{{asset('/images/logo.png')}}" alt="">
             </a>
 
             <div class="nav-control">

@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>{{ENV('APP_NAME')}} | @yield('title', 'Home')</title>
     <link rel="stylesheet" href="{{asset('/frontend/dist/main.css')}}" />
-    <link rel="icon" type="image/png" href="{{asset('/frontend/dist/images/favicon/favicon.png')}}" />
+    <link rel="icon" type="image/png" href="{{asset('/frontend/dist/images/favicon/logo.png')}}" />
     <link rel="stylesheet" href="{{asset('/frontend/fontawesome-free-5.15.4-web/css/all.min.css')}}">
     <style>
         .dropdown {
@@ -476,7 +476,7 @@
             <div class="container">
                 <div class="footer__bottom-content">
                     <div class="footer__bottom_copyright">
-                        <p>© 2024 - P.T.F. All rights reserved</p>
+                        <p>© 2024 - E-learning All rights reserved</p>
                     </div>
                     <div class="footer__bottom_topbutton">
                         <a href="#">

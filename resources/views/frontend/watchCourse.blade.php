@@ -89,9 +89,8 @@
                                 <button class="nav-link" id="nav-lnotes-tab" data-bs-toggle="tab"
                                     data-bs-target="#nav-lnotes" type="button" role="tab" aria-controls="nav-lnotes"
                                     aria-selected="false">Lesson Notes</button>
-                                <button class="nav-link" id="nav-lcomments-tab" data-bs-toggle="tab"
-                                    data-bs-target="#nav-lcomments" type="button" role="tab"
-                                    aria-controls="nav-lcomments" aria-selected="false">Comments</button>
+
+                             
                                 <button class="nav-link" id="nav-loverview-tab" data-bs-toggle="tab"
                                     data-bs-target="#nav-loverview" type="button" role="tab"
                                     aria-controls="nav-loverview" aria-selected="false">Course Overview</button>
@@ -137,99 +136,7 @@
                                 <!-- Course Notes Ends Here -->
                             </div>
                             <!-- Lesson Comments Starts Here -->
-                            <div class="tab-pane fade" id="nav-lcomments" role="tabpanel"
-                                aria-labelledby="nav-lcomments-tab">
-                                <div class="lesson-comments">
-                                    <div class="feedback-comment pt-0 ps-0 pe-0">
-                                        <h6 class="font-title--card">Add a  Comment</h6>
-                                        <form action="#">
-                                            <label for="comment">Comment</label>
-                                            <textarea class="form-control" id="comment" placeholder="Add a  Comment"></textarea>
-                                            <button type="submit" class="button button-md button--primary float-end">Post
-                                                Comment</button>
-                                        </form>
-                                    </div>
-                                    <div class="students-feedback pt-0 ps-0 pe-0 pb-0 mb-0">
-                                        <div class="students-feedback-heading">
-                                            <h5 class="font-title--card">Comments <span>(57,685)</span></h5>
-                                        </div>
-                                        <div class="students-feedback-item">
-                                            <div class="feedback-rating">
-                                                <div class="feedback-rating-start">
-                                                    <div class="image">
-                                                        <img src="{{asset('/frontend/dist/images/ellipse/user.jpg')}}" alt="Image" />
-                                                    </div>
-                                                    <div class="text">
-                                                        <h6><a href="#">Harry Pinsky</a></h6>
-                                                        <p>1 hour ago</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <p>
-                                                Aliquam eget leo quis neque molestie dictum. Etiam ut tortor tempor,
-                                                vestibulum ante non, vulputate nibh. Cras non molestie diam. Great
-                                                Course
-                                                for Beginner 😀
-                                            </p>
-                                        </div>
-                                        <div class="students-feedback-item">
-                                            <div class="feedback-rating">
-                                                <div class="feedback-rating-start">
-                                                    <div class="image">
-                                                        <img src="{{asset('/frontend/dist/images/ellipse/1.png')}}" alt="Image" />
-                                                    </div>
-                                                    <div class="text">
-                                                        <h6><a href="#">Harry Pinsky</a></h6>
-                                                        <p>2 hour ago</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <p>
-                                                Aliquam eget leo quis neque molestie dictum. Etiam ut tortor tempor,
-                                                vestibulum ante non, vulputate nibh.
-                                            </p>
-                                        </div>
-                                        <div class="students-feedback-item">
-                                            <div class="feedback-rating">
-                                                <div class="feedback-rating-start">
-                                                    <div class="image">
-                                                        <img src="{{asset('/frontend/dist/images/ellipse/2.png')}}" alt="Image" />
-                                                    </div>
-                                                    <div class="text">
-                                                        <h6><a href="#">Watcraz Eggsy</a></h6>
-                                                        <p>1 day ago</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <p>
-                                                Aenean vulputate nisi ligula. Quisque in tempus sapien. Quisque
-                                                vestibulum
-                                                massa eget consequat scelerisque. Phasellus varius risus nec maximus
-                                                auctor.
-                                            </p>
-                                        </div>
-                                        <div class="students-feedback-item border-0">
-                                            <div class="feedback-rating">
-                                                <div class="feedback-rating-start">
-                                                    <div class="image">
-                                                        <img src="{{asset('/frontend/dist/images/ellipse/3.png')}}" alt="Image" />
-                                                    </div>
-                                                    <div class="text">
-                                                        <h6><a href="#">Watcraz Eggsy</a></h6>
-                                                        <p>1 day ago</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <p>
-                                                Cras non molestie diam. Aenean vulputate nisi ligula. Quisque in tempus
-                                                sapien. Quisque vestibulum massa eget consequat scelerisque.
-                                            </p>
-                                        </div>
-                                        <button class="button button-md button--primary-outline">Load More</button>
-                                    </div>
-                                </div>
-                                <!-- Lesson Comments Ends Here -->
-                            </div>
+                            
                             <!-- Course Overview Starts Here -->
                             <div class="tab-pane fade" id="nav-loverview" role="tabpanel"
                                 aria-labelledby="nav-loverview-tab">
@@ -316,7 +223,7 @@
                 <div class="videolist-area">
                     <div class="videolist-area-heading">
                         <h6>Course Contents</h6>
-                        <p>5% Completed</p>
+                        
                     </div>
                     <div class="videolist-area-bar">
                         <span class="videolist-area-bar--progress"></span>

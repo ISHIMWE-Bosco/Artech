@@ -23,7 +23,7 @@ class ContactController extends Controller
             'message' => $request->message,
         ];
 
-        Mail::to('habimalexis13@gmail.com')->send(new ContactMail($details));
+        Mail::to('lionceaux118@gmail.com')->send(new ContactMail($details));
         $this->notice::success('Successfully saved');
         return redirect()->back();
     }
