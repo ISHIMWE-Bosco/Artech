@@ -204,16 +204,7 @@
                                     <span class="text-danger"> {{ $errors->first('prerequisites_en') }}</span>
                                     @endif
                                 </div>
-                                    {{-- <div class="col-lg-6 col-md-6 col-sm-12">
-                                        <div class="form-group">
-                                            <label class="form-label">পূর্বশর্ত (বাংলায়)</label>
-                                            <textarea class="form-control" name="prerequisites_bn"
-                                                value="{{old('prerequisites_bn')}}"></textarea>
-                                        </div>
-                                        @if($errors->has('prerequisites_bn'))
-                                        <span class="text-danger"> {{ $errors->first('prerequisites_bn') }}</span>
-                                        @endif
-                                    </div> --}}
+                                   
                                 <div class="col-lg-6 col-md-6 col-sm-12">
                                     <div class="form-group">
                                         <label class="form-label">Course Code</label>
