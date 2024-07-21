@@ -249,7 +249,7 @@
                     </div>
                     <div class="col-lg-7 order-1 order-lg-0">
                         <div class="signup-area-image">
-                            <img src="{{asset('/frontend/dist/images/signup/Illustration.png')}}"
+                            <img src="{{asset('/frontend/dist/images/signup/Illustration.jpg')}}"
                                 alt="Illustration Image" class="img-fluid" />
                         </div>
                     </div>
