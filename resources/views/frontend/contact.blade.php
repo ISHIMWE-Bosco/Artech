@@ -37,7 +37,7 @@
                     <h2 class="font-title--md mb-0">Our Branches</h2>
                     <p class="font-para--lg">
                         
-                        We’re here to help! Whether you have questions, need assistance, or want to share feedback, the E-learning team is always ready to support you.
+                        We’re here to help! Whether you have questions, need assistance, or want to share feedback, the Artech Learning team is always ready to support you.
                     </p>
                     <ul class="hero__content-location">
                         <li>

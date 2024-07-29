@@ -73,7 +73,7 @@
                 <div class="course-description-start">
                     <div class="video-area">
                         <video controls id="myvideo" class="video-js w-100"
-                            poster="{{asset('/frontend/dist/images/courses/vthumb.jpg')}}">
+                            poster="{{asset('/frontend/dist/images/courses/demo-img-01.png')}}">
                             <source src="" class="w-100" />
                         </video>
                     </div>

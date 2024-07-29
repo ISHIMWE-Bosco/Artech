@@ -301,7 +301,7 @@
                                 class="img-fluid" />
                         </div>
                         <p>
-                            Unlock a world of opportunities with Us, the ultimate E-learning platform designed to elevate your learning experience.
+                            Unlock a world of opportunities with Us, the ultimate Artech Learning platform designed to elevate your learning experience.
                         </p>
                         <div class="footer__wrapper_social d-none d-lg-block">
                             <ul>
@@ -476,7 +476,7 @@
             <div class="container">
                 <div class="footer__bottom-content">
                     <div class="footer__bottom_copyright">
-                        <p>© 2024 - E-learning All rights reserved</p>
+                        <p>© 2024 - Artech Learning All rights reserved</p>
                     </div>
                     <div class="footer__bottom_topbutton">
                         <a href="#">

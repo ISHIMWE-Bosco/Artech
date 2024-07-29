@@ -11,40 +11,20 @@
         <div class="row">
             <div class="col-lg-6 mb-lg-0 order-2 order-lg-0 d-flex align-items-center">
                 <div class="banner-two-start">
-                    <h1 class="font-title-lg">Welcome to E-learning – Your Personalized Learning Journey Begins Here!</h1>
+                    <h1 class="font-title-lg">Welcome to Artech Learning! <br>
+                        Inspiring Education Through Music, Art, and Language</h1>
                     <p>
                     
-                        Discover the perfect tutor for your unique needs with E-learning. We connect you with expert tutors to help you achieve your educational goals.
+                        Welcome to Artech Learning, where we transform primary education in rural areas through the vibrant and engaging world of music, art, and language. Our mission is to create dynamic and captivating learning experiences that not only enhance academic performance but also help students discover their talents and passions.
 
-Find experienced tutors, enjoy one-on-one sessions, and learn at your own pace. Whether you need help with academics, test prep, or new skills, we’ve got you covered.
-
-Start your personalized learning journey today with E-learning and unlock your full potential!
-                    
+                        At Artech Learning, we believe that education should be more than just textbooks and exams. By integrating creative arts into the curriculum, we aim to foster a love for learning, stimulate creativity, and support holistic development. Join us on this exciting journey as we bring new opportunities and inspiration to young minds.
+                        
+                        Together, let's create a brighter future through the power of music, art, and language.
                     </p>
-                    {{-- <form>
-                        <div class="banner-input">
-                            <div class="main-input">
-                                <input type="text" placeholder="what do you want to learn today..." />
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round" class="feather feather-search">
-                                    <circle cx="11" cy="11" r="8"></circle>
-                                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
-                                </svg>
-                            </div>
-                            <div class="search-button">
-                                <button class="button button-lg button--primary">Search</button>
-                            </div>
-                        </div>
-                    </form> --}}
+
                 </div>
             </div>
-            {{-- <div class="col-lg-5 order-1 order-lg-0">
-                <div class="main-banner-end">
-                    <img src="{{asset('/frontend/dist/images/banner/banner.jpg')}}" alt="image"
-                        class="img-fluid" width="515" height="700"/>
-                </div>
-            </div> --}}
+            
         </div>
     </div>
 </section>
@@ -478,7 +458,7 @@ Start your personalized learning journey today with E-learning and unlock your f
                                             </div>
                                             <span>
                                                 @php
-                                                $visit =  DB::table('enrollments')->where('course_id',$bc->id)->count();
+                                                $visit =  DB::table('enrollments')->where('course_id',$ic->id)->count();
                                                     @endphp
                                                     {{
                                                       $visit 
@@ -526,10 +506,10 @@ Start your personalized learning journey today with E-learning and unlock your f
     </div>
 </section>
 
-{{-- Why You'll Learn With E-learning --}}
+{{-- Why You'll Learn With Artech Learning --}}
 <section class="section feature section section--bg-offwhite-one">
     <div class="container">
-        <h2 class="font-title--md text-center">Why You'll Learn with E-learning</h2>
+        <h2 class="font-title--md text-center">Why You'll Learn with Artech Learning</h2>
         <div class="row">
             <div class="col-lg-4 col-md-6">
                 <div class="cardFeature">
@@ -747,13 +727,13 @@ Start your personalized learning journey today with E-learning and unlock your f
                             class="img-fluid" />
                     </div>
                     <div class="main-text">
-                        <h6 class="font-title--sm">Use E-learning For Business</h6>
+                        <h6 class="font-title--sm">Use Artech Learning For Business</h6>
                         <p>
                             Praesent ultricies nulla ac congue bibendum. Aliquam tempor euismod purus posuere
                             gravida. Praesent augue sapien, vulputate eu imperdiet eget, tempor at enim.
                         </p>
                         <div class="text-center">
-                            <a href="#" class="green-btn">Get E-learning For Business</a>
+                            <a href="#" class="green-btn">Get Artech Learning For Business</a>
                         </div>
                     </div>
                 </div>

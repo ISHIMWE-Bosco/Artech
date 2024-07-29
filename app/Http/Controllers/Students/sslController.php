@@ -37,7 +37,6 @@ class sslController extends Controller
         $deposit->txnid = $txnid;
         $deposit->save();
         
-
         $post_data = array();
         $post_data['store_id'] = 'geniu5e1b00621f81e';//$settings->ssl_store_id;
         $post_data['store_passwd'] = 'geniu5e1b00621f81e@ssl';//$settings->ssl_store_password;

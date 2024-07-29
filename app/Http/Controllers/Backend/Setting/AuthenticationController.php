@@ -33,7 +33,7 @@ class AuthenticationController extends Controller
             else
                 return redirect('login')->with('danger', 'Please Try Again');
         } catch (Exception $e) {
-            dd($e);
+            // dd($e);
             return redirect('login')->with('danger', 'Please Try Again');
         }
     }
@@ -81,7 +81,6 @@ class AuthenticationController extends Controller
             ]
         );
     }
-
     public function signOut()
     {
         request()->session()->flush();

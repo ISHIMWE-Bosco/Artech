@@ -45,6 +45,9 @@ class DashboardController extends Controller
             ,compact('student','category','course','material','enrollment','instructor','lesson')); 
         
         else
+        if ($user->role = 'parent')
+            return view('backend.ParentDashboard');
+        else
             return view('backend.dashboard');
 
         //   $user = User::get();
