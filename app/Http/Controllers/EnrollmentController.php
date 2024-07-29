@@ -30,7 +30,13 @@ class EnrollmentController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $enrole=new Enrollment;
+        $enrole->student_id=$request->student_id;
+        $enrole->course_id=$request->course_id;
+        $enrole->enrollment_date=date('Y-m-d');
+        $enrole->save();
+        return redirect()->route('studentdashboard')->with('success', 'you have successfully added!');
+
     }
 
     /**

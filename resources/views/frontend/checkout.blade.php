@@ -28,18 +28,23 @@
                     <div class="tab-content" id="pills-tabContent">
                         <div class="tab-pane fade show active" id="pills-checkout" role="tabpanel"
                             aria-labelledby="pills-checkout-tab">
-                            <form action="{{route('payment.ssl.submit')}}" method="post">
+                            <form action="{{route('student.enrollment')}}" method="post">
                                 @csrf
                                 <div class="mb-4">
                                     <div class="ps-0 ">
-                                        <label class="text-danger"> *
-                                            Please check your courses before payment
-                                        </label>
+                                        @if(session('cart'))
+                                        @foreach (session('cart') as $id => $details)
+                                        <input type="text" name="student_id" value="{{currentUserId()}}">
+                                        <input type="text" name="course_id" value="{{$id}}">
+                                    @endforeach
+    @endif
+   
+                                        
                                     </div>
                                 </div>
                                 <button type="submit" class="button button-lg button--primary w-100"> Click Here to
                                     Confirm
-                                    Payment</button>
+                                    </button>
                             </form>
                         </div>
                     </div>
@@ -47,7 +52,7 @@
             </div>
             <div class="col-lg-6 mt-4 mt-lg-0">
                 <div class="checkout-area-summery">
-                    <h6 class="checkout-area__label">Summary</h6>
+                    {{-- <h6 class="checkout-area__label">Summary</h6> --}}
 
                     <div class="cart">
                         <div class="cart__includes-info cart__includes-info--bordertop-0">
@@ -80,38 +85,7 @@
 
                             </div>
                         </div>
-                        <div class="cart__checkout-process">
-                            <ul>
-                                <li>
-                                    <p>Subtotal</p>
-                                    <p>{{'RWF' . number_format((float) session('cart_details')['cart_total'] , 2)}}
-                                    </p>
-                                    {{-- {{ 'RWF' . (session('cart_details') && array_key_exists('cart_total',
-                                    session('cart_details')) ? number_format(session('cart_details')['cart_total'], 2) :
-                                    '0.00') }} --}}
-                                </li>
-                                <li>
-                                    <p>Coupon Discount ({{session('cart_details')['discount'] ?? 0.00}}%)</p>
-                                    <p>{{'RWF' . number_format((float) isset(session('cart_details')['discount_amount']) ?
-                                        session('cart_details')['discount_amount']: 0.00 , 2)}}</p>
-                                </li>
-                                <li>
-                                    <p>Taxes (15%)</p>
-                                    <p>{{'RWF' . number_format((float) session('cart_details')['tax'] , 2)}}</p>
-                                    {{-- {{ 'RWF' . (session('cart_details') && array_key_exists('tax',
-                                    session('cart_details')) ? number_format(session('cart_details')['tax'], 2) :
-                                    '0.00') }} --}}
-                                </li>
-                                <li>
-                                    <p class="font-title--card">Total:</p>
-                                    <p class="total-price font-title--card">{{'RWF' .
-                                        number_format((float)session('cart_details')['total_amount'] , 2)}}</p>
-                                    {{-- {{ 'RWF' . (session('cart_details') && array_key_exists('total_amount',
-                                    session('cart_details')) ? number_format(session('cart_details')['total_amount'], 2)
-                                    : '0.00') }} --}}
-                                </li>
-                            </ul>
-                        </div>
+                       
                     </div>
                 </div>
             </div>

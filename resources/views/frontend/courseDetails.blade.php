@@ -2312,53 +2312,24 @@
                 <div class="courseCard--wrapper">
                     <div class="cart">
                         <div class="cart__price">
-                            <div class="current-price">
+                            {{-- <div class="current-price">
                                 <h3 class="font-title--sm">{{$course->price?'RWF'.$course->price:'Free'}}</h3>
                                 <p><del>{{$course->old_price?'RWF'.$course->old_price:''}}</del></p>
-                            </div>
+                            </div> --}}
                             <div class="current-discount">
-                                <p class="font-para--md">90% off</p>
+                                {{-- <p class="font-para--md">90% off</p> --}}
                             </div>
                         </div>
                         <div class="cart__checkout-process">
-                            <p class="time-left text-center"><span>5 hours</span> to remaining this price</p>
+                            {{-- <p class="time-left text-center"><span>5 hours</span> to remaining this price</p> --}}
                             <form action="#">
                                 <a href="{{route('add.to.cart', $course->id)}}"
-                                    class="text-white button button-lg button--primary w-100">Add to Cart</a>
+                                    class="text-white button button-lg button--primary w-100">Add to List</a>
                                 <a href="{{route('checkout')}}"
-                                    class="button button-lg button--primary-outline mt-3 w-100">Buy Now</a>
+                                    class="button button-lg button--primary-outline mt-3 w-100">Confirm Now</a>
                             </form>
                         </div>
-                        <div class="cart__includes-info">
-                            <h6 class="font-title--card">This course includes:</h6>
-                            <ul>
-                                <li>
-                                    <span><img src="{{asset('/frontend/dist/images/icon/dollar.png')}}"
-                                            alt="dollar" /></span>
-                                    <p class="font-para--md">Full Lifetime Access</p>
-                                </li>
-                                {{-- <li>
-                                    <span><img src="{{asset('/frontend/dist/images/icon/clock-2.png')}}"
-                                            alt="clock" /></span>
-                                    <p class="font-para--md">30 Days Money Back Guarantee</p>
-                                </li> --}}
-                                <li>
-                                    <span><img src="{{asset('/frontend/dist/images/icon/paper-plus.png')}}"
-                                            alt="paper-plus" /></span>
-                                    <p class="font-para--md">Free Exercises File</p>
-                                </li>
-                                <li>
-                                    <span><img src="{{asset('/frontend/dist/images/icon/airplay.png')}}"
-                                            alt="airplay" /></span>
-                                    <p class="font-para--md">Access on Mobile , Tablet and TV</p>
-                                </li>
-                                {{-- <li>
-                                    <span><img src="{{asset('/frontend/dist/images/icon/clipboard.png')}}"
-                                            alt="clipboard" /></span>
-                                    <p class="font-para--md">Certificate of Completion</p>
-                                </li> --}}
-                            </ul>
-                        </div>
+                       
                         <div class="cart__share-content">
                             <h6 class="font-title--card">Enjoy the course</h6>
                            

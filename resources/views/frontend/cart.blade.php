@@ -86,8 +86,8 @@
         @else
         <section class="section cart-area pb-0">
             <div class="container text-center">
-                <h1>Your Cart is Empty</h1>
-                <h5>No Courses in Your Cart Yet</h5>
+                <h1>Your Wish list is Empty</h1>
+                <h5>No Courses in Your List Yet</h5>
             </div>
         </section>
         @endif

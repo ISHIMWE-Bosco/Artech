@@ -25,8 +25,9 @@ use App\Http\Controllers\CheckoutController as checkout;
 use App\Http\Controllers\CouponController as coupon;
 use App\Http\Controllers\WatchCourseController as watchCourse;
 use App\Http\Controllers\LessonController as lesson;
-use App\Http\Controllers\EnrollmentController as enrollment;
+use App\Http\Controllers\RWFmentController as RWFment;
 use App\Http\Controllers\EventController as event;
+use App\Http\Controllers\EnrollmentController;
 
 /* students */
 use App\Http\Controllers\Students\AuthController as sauth;
@@ -98,6 +99,7 @@ Route::middleware(['checkstudent'])->prefix('students')->group(function () {
 
     // ssl Routes
     Route::post('/payment/ssl/submit', [sslcz::class, 'store'])->name('payment.ssl.submit');
+    Route::post('/student/enrollment', [EnrollmentController::class, 'store'])->name('student.enrollment');
 });
 
 // frontend pages
