@@ -77,7 +77,7 @@ Route::middleware(['checkrole'])->prefix('admin')->group(function () {
     Route::resource('discussion', discussion::class);
     Route::resource('message', message::class);
     Route::resource('coupon', coupon::class);
-    Route::resource('enrollment', enrollment::class);
+    Route::resource('enrollment', EnrollmentController::class);
     Route::get('permission/{role}', [permission::class, 'index'])->name('permission.list');
     Route::post('permission/{role}', [permission::class, 'save'])->name('permission.save');
 });

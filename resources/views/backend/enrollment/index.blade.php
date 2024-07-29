@@ -45,7 +45,7 @@
                                                 <th>{{__('Student Name')}}</th>
                                                 <th>{{__('Course Name')}}</th>
                                                 <th>{{__('Course Image')}}</th>
-                                                <th>{{__('Course Value')}}</th>
+                                                <!-- <th>{{__('Course Value')}}</th> -->
                                                 <th>{{__('Enrollment Date')}}</th>
                                                 <th>{{__('Action')}}</th>
                                             </tr>
@@ -63,7 +63,7 @@
                                                         src="{{asset('/uploads/courses/'.$e->course?->image)}}"
                                                         alt="">
                                                 </td>
-                                                <td><strong>{{$e->course?->price==null?'Free':'RWF'.$e->course?->price}}</strong></td>
+                                                <!-- <td><strong>{{$e->course?->price==null?'Free':'RWF'.$e->course?->price}}</strong></td> -->
                                                 <td><strong>{{$e->enrollment_date}}</strong></td>
                                                 <td>
                                                     {{-- <a href="{{route('enrollment.edit', encryptor('encrypt',$e->id))}}"

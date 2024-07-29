@@ -34,8 +34,8 @@
                                     <div class="ps-0 ">
                                         @if(session('cart'))
                                         @foreach (session('cart') as $id => $details)
-                                        <input type="text" name="student_id" value="{{currentUserId()}}">
-                                        <input type="text" name="course_id" value="{{$id}}">
+                                        <input type="hidden" name="student_id" value="{{currentUserId()}}">
+                                        <input type="hidden" name="course_id" value="{{$id}}">
                                     @endforeach
     @endif
    
@@ -72,12 +72,12 @@
                                                 href="{{route('courseDetails', encryptor('encrypt', $id))}}">{{$details['title_en']}}</a>
                                         </h6>
                                         <p>by {{$details['instructor']}}</p>
-                                        <div class="price">
+                                        <!-- <div class="price">
                                             <h6 class="font-para--md">{{$details['price'] ? 'RWF' . $details['price'] :
                                                 'Free'}}</h6>
                                             <p><del>{{$details['old_price'] ? 'RWF' . $details['old_price'] : ''}}</del>
                                             </p>
-                                        </div>
+                                        </div> -->
                                     </div>
                                 </div>
                                 @endforeach

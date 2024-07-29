@@ -143,10 +143,10 @@
                                                 alt="client-image" class="rounded-circle" height="34" width="34" />
                                             <p class="font-para--md">{{$pc?->instructor->name_en}}</p>
                                         </a>
-                                        <div class="price">
+                                        <!-- <div class="price">
                                             <span>{{$pc->price?'RWF'.$pc->price:'Free'}}</span>
                                             <del>{{$pc->old_price?'RWF'.$pc->old_price:''}}</del>
-                                        </div>
+                                        </div> -->
                                     </div>
                                     <div class="contentCard-more">
                                         {{-- <div class="d-flex align-items-center">
