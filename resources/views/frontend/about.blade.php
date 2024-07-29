@@ -147,7 +147,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 position-relative">
-                <h2 class="text-center mb-40 font-title--md">Meet Our Best Instructor</h2>
+                <h2 class="text-center mb-40 font-title--md">Meet Our Best Instructors</h2>
                 <div class="ourinstructor__wrapper mt-lg-5 mt-0">
                     <div class="ourinstructor-active">
                         <div class="mentor">

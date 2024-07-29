@@ -548,7 +548,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-12 position-relative">
-                <h3 class="text-center mb-40 font-title--md">Meet Our Best Instructor</h3>
+                <h3 class="text-center mb-40 font-title--md">Meet Our Best Instructors</h3>
                 <div class="ourinstructor__wrapper mt-lg-5 mt-0">
                     <div class="ourinstructor-active">
                         @forelse ($instructor as $i)
