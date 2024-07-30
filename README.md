@@ -1,3 +1,4 @@
+HEAD
 # Online Learning Management System (eLearning Platform with Laravel)
 
 ![Project Banner](link-to-banner-image)
@@ -49,4 +50,6 @@ Contributions are welcome! Please follow the contribution guidelines outlined in
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [MIT License](L
+# Learning_Platform
+60f132beb95823d425296f370b05a4e2cdf9dcaf
